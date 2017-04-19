@@ -1,0 +1,60 @@
+
+
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+<div class="erjititle">关于我们</div>
+<ul class="menucont gywm">
+    <li  class="twomenu gsjj228">
+         <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158437637fc00ea'}")>
+         <#if catalog?exists>
+         <a href="${catalog.url!'javascript:void(0);'}">公司简介</a>
+         </#if>
+    </li>
+    <li class="product_line"></li>
+    <li  class="twomenu ryzz228">
+         <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158437534f100e2'}")>
+         <#if catalog?exists>
+         <a href="${catalog.url!'javascript:void(0);'}">资质荣誉</a>
+         </#if>
+    </li>
+    <li class="product_line"></li>
+    <li  class="twomenu xwdt228_on">
+         <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584377b29b00f2'}")>
+         <#if catalog?exists>
+         <a href="${catalog.url!'javascript:void(0);'}">新闻动态</a>
+         </#if>
+    </li>
+    <li class="product_line"></li>
+    <li  class="twomenu tzzgx228">
+                <span class="clickspan">
+                投资者关系
+                </span>
+                <span class="close"></span>
+                <div class="child">
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584375ba3900e6'}")>
+                    <#if catalog?exists> 
+                        <div class="threemenu"><a href="${catalog.url!'javascript:void(0);'}">基本信息</a></div>
+                    </#if>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584374bf9600de'}")>
+                    <#if catalog?exists> 
+                        <div class="threemenu"><a href="${catalog.url!'javascript:void(0);'}">公司公告</a></div>
+                    </#if>
+                </div>
+    </li>
+    <li class="product_line"></li>
+    <li  class="twomenu lxwm228">
+         <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584374273c00da'}")>
+         <#if catalog?exists>
+         <a href="${catalog.url!'javascript:void(0);'}">联系我们</a>
+         </#if>
+    </li>
+    <li class="product_line"></li>
+    <li  class="twomenu jrwm228">
+         <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584376b0d800ee'}")>
+         <#if catalog?exists>
+         <a href="${catalog.url!'javascript:void(0);'}">加入我们</a>
+         </#if>
+    </li> 
+    <li class="product_line"></li> 
+</ul>
+

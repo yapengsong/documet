@@ -1,0 +1,3 @@
+INSERT INTO `ecmc_sys_roleauth` (`id`,`role_id`,`auth_id`) VALUES ('402890ab5b221abf015b2330632200c7','40289092543bd6a801543bfee6a8000b','402890ba5aae0d0c015aae36bad90000');
+INSERT INTO `ecmc_sys_roleauth` (`id`,`role_id`,`auth_id`) VALUES ('402899635adaf2ec015adaf7e4a9027e','40289092543bd6a801543bff30f2000c','402890ba5aae0d0c015aae36bad90000');
+INSERT INTO `ecmc_sys_roleauth` (`id`,`role_id`,`auth_id`) VALUES ('402899635adaf2ec015adaf7e4a9027f','40289092543bd6a801543bff30f2000c','402890ba5ac70011015ac707ae550000');

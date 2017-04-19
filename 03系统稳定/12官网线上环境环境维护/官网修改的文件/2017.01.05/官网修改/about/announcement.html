@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" xmlns="http://www.w3.org/1999/html"/>
+<title>易云捷讯-企业云上易云</title>
+<link href="/style/style.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+    <#include "/wwwroot/yymh/template/common/top.html">
+ <#include "/wwwroot/yymh/template/common/header.html">
+ <table width="1200" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+         <td><table height="32" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+                 <tbody>
+                    <tr>
+                         <td class="navv"><a class="navv" href="/">首页</a> &gt;
+                            <#assign catalog=catalogTag("{'levels':'self','name':'402890e7585d147e01585d155dc70001'}")>
+                            <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}">关于我们</a>&gt;
+                            </#if>
+                                <strong>公司公告</strong></td>
+                     </tr>
+                </tbody>
+             </table></td>
+     </tr>
+</table>
+ <table width="1200" border="0" cellspacing="0" cellpadding="0" class="warp1200">
+    <tr>
+         <td width="210" valign="top" bgcolor="#F8F8F8">
+         	<div class="erjititle">
+                关于我们
+            </div>
+            <ul class="menucont gywm">
+            	<li class="twomenu gsjj228">
+                	 <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158437637fc00ea'}")>
+                     <#if catalog?exists>
+                     <a href="${catalog.url!'javascript:void(0);'}">公司简介</a>
+                     </#if>
+                </li>
+                <li class="product_line"></li>
+                <li class="twomenu ryzz228">
+                     <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158437534f100e2'}")>
+                     <#if catalog?exists>
+                     <a href="${catalog.url!'javascript:void(0);'}">资质荣誉</a>
+                     </#if>
+                </li>
+                <li class="product_line"></li>
+                <li class="twomenu xwdt228">
+                     <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584377b29b00f2'}")>
+                     <#if catalog?exists>
+                     <a href="${catalog.url!'javascript:void(0);'}">新闻动态</a>
+                     </#if>
+                </li>
+                <li class="product_line"></li>
+                <li class="twomenu tzzgx228">
+                    <span class="clickspan">投资者关系</span>
+                    <span class="open"></span>
+                    <div class="child">
+                        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584375ba3900e6'}")>
+                        <#if catalog?exists> 
+                            <div class="threemenu"><a href="${catalog.url!'javascript:void(0);'}">基本信息</a></div>
+                        </#if>
+                        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584374bf9600de'}")>
+                        <#if catalog?exists> 
+                            <div class="threemenu on"><a href="${catalog.url!'javascript:void(0);'}">公司公告</a></div>
+                        </#if>
+                    </div>
+                </li>
+                <li class="product_line"></li>
+                <li  class="twomenu lxwm228">
+                     <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584374273c00da'}")>
+                     <#if catalog?exists>
+                     <a href="${catalog.url!'javascript:void(0);'}">联系我们</a>
+                     </#if>
+                </li>
+                <li class="product_line"></li>
+                <li  class="twomenu jrwm228">
+                     <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584376b0d800ee'}")>
+                     <#if catalog?exists>
+                     <a href="${catalog.url!'javascript:void(0);'}">加入我们</a>
+                     </#if>
+                </li>
+                <li class="product_line"></li> 
+                </ul>
+            </td>
+         <td width="20">&nbsp;</td>
+         <td width="950" valign="top" class="contentH">
+         <div class="contentH">
+                 <table width="100%" cellspacing="0" cellpadding="3">
+                    <tbody>
+                        <#assign articleTag =newTag("articleTag")>
+                        <#assign articleList =articleTag("{'name':'402890e758434aaa01584374bf9600de',count:'13','page':true,'pagesize':'10','pageindex':'${pageindexF}'}")>
+                        <#if articleList?exists && articleList?size gt 0>
+                        <#list articleList as article>
+                         <tr>
+                                <td class="newsquery" style="border-bottom:#dbdbdb 1px solid">${article.title}</td>
+                                    <td style="border-bottom:#dbdbdb 1px solid" width="100">&nbsp;</td>
+                                    <td style="border-bottom:#dbdbdb 1px solid" width="60"><div class="wdzx_xz"> <a href="${article.digest}" target="_self">下载</a> </div>
+                                         
+                                </td>
+                        </tr>
+								</#list>
+							</#if>
+
+                     </tbody>
+                </table>
+            <table style="margin-bottom:60px; margin-top:40px" height="43" width="100%" cellspacing="0" cellpadding="4" border="0" align="center">
+                 <tbody>
+                    <tr>
+                    	<td align="left" height="50">
+                            ${pagebar}
+                        </td>
+
+                     </tr>
+                </tbody>
+             </table>
+             
+             </div>
+             </td>
+     </tr>
+</table>
+<#include "/wwwroot/${sitePath}/template/common/foot_content.html">
+<script type="text/javascript" src="/script/jquery.min.js"></script>
+<script type="text/javascript" src="/script/left_menu.js"></script>
+<script type="text/javascript" src="/script/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+-- 云硬盘的权限调整
+INSERT INTO sys_selfrolepower (rp_id,role_id,power_id,rp_state) (SELECT REPLACE (uuid(), '-', '') as rp_id,r.role_id as role_id,p.power_id as power_id,'1' as rp_state FROM sys_selfrole r,sys_selfpower p WHERE r.role_name = '普通用户' AND p.power_route IN ('disk_view','disk_addSnap','snap_view'));

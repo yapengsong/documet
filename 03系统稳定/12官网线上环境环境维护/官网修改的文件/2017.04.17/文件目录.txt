@@ -1,0 +1,10 @@
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/images/banner1.jpg
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/images/banner2.jpg
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/images/customer-phone.png
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/script/jquery.jslides.js
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/style/style.css
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/about/intro.html
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/common/foot.html
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/common/foot_content.html
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/common/foot_syy.html
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/index.html

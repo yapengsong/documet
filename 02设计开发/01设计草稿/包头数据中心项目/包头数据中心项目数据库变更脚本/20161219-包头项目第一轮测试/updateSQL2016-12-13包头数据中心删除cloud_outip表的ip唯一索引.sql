@@ -1,0 +1,1 @@
+alter table cloud_outip drop index idx_ipaddress;

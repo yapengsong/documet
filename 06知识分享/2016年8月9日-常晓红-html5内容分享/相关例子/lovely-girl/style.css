@@ -1,0 +1,150 @@
+@charset "utf-8";
+/********************************************************
+	copyright: www.owjee.com
+	filename: frame.css
+	revision: 1.0
+	createdate: 2010-10-03
+	author: lovebslq
+	description:整个系首页框架布局
+********************************************************/
+/*公用样式1"Microsoft Yahei","冬青黑体简体中文 w3","黑体"
+----------------------------------------------------------------------------------------------------*/
+body{background:#ef9825;}
+.absolute{position: absolute;}
+.girlBox{width: 470px; height:506px; margin:20px auto; position:relative;}
+/*帽子顶*/
+.capBox{width:420px; height:152px; margin-left:18px; top:20px; position: relative; z-index: 18;}
+.capBox .topBox {position: absolute; top:0; left:55px; width:300px; height:60px; overflow:hidden;}
+.capBox .topBox .top{ width:300px; height:300px; border-radius:50%; background:#f4d641; }
+/*帽沿*/
+.capBox .pinkBox{position: absolute; top:30px; left:36px; width:336px; z-index: 6; height:70px; overflow:hidden; border-top-left-radius:50%; border-top-right-radius:50%;}
+.capBox .pinkBox .pink{width:260px; height:100px; margin-left:40px; margin-top:0px;  border-radius:50%; background:#e05882;}
+
+.capBox .daquanBox{position:absolute;  z-index: 7; width:480px; height:205px; left:-20px; top:55px;  border-bottom-left-radius:50%; border-bottom-right-radius:50%; overflow: hidden;}
+.capBox .daquan{width:360px; height:200px;  position:absolute; background:none; border:#f4d641 solid 60px; border-radius:50%;}
+.capBox .daquan2{width:360px; height:200px; position:absolute; background:none; border:#c29b1e solid 53px; opacity: 0.23; border-radius:50%; margin-top:40px;  left:10px;}
+
+.headerBox{width:360px; height:250px; position: relative; left: 58px; top:-45px; overflow: hidden;}
+.headerBox .header{width:320px; height:230px; left:20px; margin-top:-35px; border-radius:50%; background: #a14a24;}
+/*耳朵*/
+.headerBox .ear{width:38px; height:51px; position: absolute; z-index:16; background:#f9cdbb; border-radius: 50%; top:130px; border:#fad6c9 solid 1px;}
+.headerBox .earl{left:30px; -webkit-transform:rotate(-15deg); -moz-transform:rotate(-15deg); transform:rotate(-15deg);}
+.headerBox .earr{right:30px; -webkit-transform:rotate(15deg); -moz-transform:rotate(15deg); transform:rotate(15deg);}
+.headerBox .ear .earlineBox{width:20px; height:6px; overflow:hidden; margin-left:5px; margin-top:2px;}
+.headerBox .ear .earlineBox .earline{width:20px; height:20px;overflow:hidden; border:#daa58c solid 3px; border-radius: 50%;}
+
+.headerBox .face{width:250px; height:240px; left:52px; top:0px; border-radius:50%; background: #f9cdaf; z-index: 17;}
+
+/*流海*/
+.bangBox{width:86px; height:54px; position: absolute; top:5px; left:82px;}
+.bangBox .bang{width:10px; height:54px; border-radius: 50%; background:#722f1b; position: absolute;}
+.bangBox .bang1{ -webkit-transform:rotate(40deg); -moz-transform:rotate(40deg); transform:rotate(40deg); top:-5px;}
+.bangBox .bang2{ -webkit-transform:rotate(20deg); -moz-transform:rotate(20deg); transform:rotate(20deg); left:20px;}
+.bangBox .bang3{ left:40px; top:10px;}
+.bangBox .bang4{ -webkit-transform:rotate(-20deg); -moz-transform:rotate(-20deg); transform:rotate(-20deg); left:60px;}
+.bangBox .bang5{ -webkit-transform:rotate(-40deg); -moz-transform:rotate(-40deg); transform:rotate(-40deg); left:80px;}
+/*眉毛*/
+.headerBox .face .browBox{position: absolute; top:50px; height:8px; line-height:8px; overflow:hidden;}
+.headerBox .face .browBoxl{left:40px; -webkit-transform:rotate(-10deg); -moz-transform:rotate(-10deg); transform:rotate(-10deg);}
+.headerBox .face .browBoxr{right:40px; -webkit-transform:rotate(10deg); -moz-transform:rotate(10deg); transform:rotate(10deg);}
+.headerBox .face .browBox .brow{width:24px; height:24px; background: none; border:#8b492e solid 2px; border-radius:50%;}
+/*眼睛*/
+.headerBox .face .eye{width:19px; height:27px; background:#722f1b; border-radius:50%; position: absolute; top:118px;}
+.headerBox .face .eye .dot{/*width:8px; height:8px; background:#fff; border-radius:50%; margin:13px auto;*/}
+.headerBox .face .eyel{left:68px;}
+.headerBox .face .eyer{right:68px;}
+/*腮红*/
+.headerBox .face .blusher{width:32px; height:20px; background:#f19482; border-radius:50%; position: absolute; top:140px;}
+.headerBox .face .blusherl{left:30px;}
+.headerBox .face .blusherr{right:30px;}
+/*嘴*/
+.headerBox .face .mouthBox{width:90px; height:60px; background:none; overflow:hidden; position: absolute; top:144px; left:80px; border-bottom-left-radius:50%;  border-bottom-right-radius:50%; /* border-top-left-radius:40%; border-top-right-radius:40%; */ overflow: hidden;  }
+.headerBox .face .mouth{width:100%;  height:100px; position:absolute; bottom:0; border-bottom-left-radius: 40%; border-bottom-right-radius: 50%;  border-top-left-radius: 40%; border-top-right-radius: 50%; }
+.headerBox .face .mouth .red{width:100%;  height:40px; position:absolute; bottom:0;  background:#a4223c; }
+.headerBox .face .mouth .tongue{position: absolute; width:50px; height:16px; left:20px; bottom:8px; border-radius:50%; background:#f19482;}
+.headerBox .face .mouth .white2{position: absolute; width:80px; height:20px; left:5px; bottom:28px; border-radius:50%; background:#fff;}
+.headerBox .face .mouth .white{position: absolute; width:90px; height:20px; left:0px; bottom:30px; border-radius:50%; background:#fff;}
+.headerBox .face .mouth .whiteLeft{position: absolute; width:20px; height:12px; left:0px; bottom:34px; border-radius:50%; background:#fff; -webkit-transform:rotate(10deg); -moz-transform:rotate(10deg); transform:rotate(14deg);}
+.headerBox .face .mouth .whiteRight{position: absolute; width:20px; height:12px; right:0px; bottom:34px; border-radius:50%; background:#fff; -webkit-transform:rotate(-10deg); -moz-transform:rotate(-10deg); transform:rotate(-14deg);}
+.headerBox .face .mouth .facecolor{position: absolute; width:110px; height:30px; left:-10px; top:28px; border-radius:50%;  background:#f9cdaf;}
+.headerBox .face .mouth .facecolor2{position: absolute; width:70px; height:30px; left:10px; top:32px; border-radius:50%;  background:#f9cdaf;}
+
+/*下巴*/
+.jaw{width:40px; height:20px; border-radius: 50%;  position: absolute; top:196px; left:105px; border-bottom: #f3c4a5 solid 2px;}
+
+/*头发*/
+.hair{width:120px; height:90px; position: absolute; top:170px;}
+.hairl{left:-18px; z-index: 20; -webkit-transform:rotate(30deg); -moz-transform:rotate(30deg); transform:rotate(30deg);}
+.hairl .hairline{background:#a14a24; position: absolute;}
+.hairl .hairline1{width:100px; height:40px; border-radius:50%; -webkit-transform:rotate(-15deg); -moz-transform:rotate(-15deg); transform:rotate(-15deg);}
+.hairl .hairline2{width:100px; height:36px; left:0; top:25px; border-radius:50%; -webkit-transform:rotate(-30deg); -moz-transform:rotate(-30deg); transform:rotate(-30deg);}
+.hairl .hairline3{width:100px; height:40px; left:0; top:40px; border-radius:50%; -webkit-transform:rotate(-70deg); -moz-transform:rotate(-70deg); transform:rotate(-70deg);}
+.hairl .hairline4{width:70px; height:40px; left:40px; top:40px; border-radius:50%; -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg); transform:rotate(-90deg);}
+.hairl .hairline5{width:70px; height:40px; left:60px; top:20px; border-radius:50%; -webkit-transform:rotate(-100deg); -moz-transform:rotate(-100deg); transform:rotate(-100deg);}
+
+.hairlbg{left:-10px; margin-top:16px; z-index: 15;  -webkit-transform:rotate(30deg); -moz-transform:rotate(30deg); transform:rotate(30deg);}
+.hairlbg .hairline{background:#722f1b; position: absolute;}
+.hairlbg .hairline1{width:100px; height:40px; border-radius:50%; -webkit-transform:rotate(-15deg); -moz-transform:rotate(-15deg); transform:rotate(-15deg);}
+.hairlbg .hairline2{width:100px; height:36px; left:0; top:25px; border-radius:50%; -webkit-transform:rotate(-30deg); -moz-transform:rotate(-30deg); transform:rotate(-30deg);}
+.hairlbg .hairline3{width:100px; height:40px; left:0; top:40px; border-radius:50%; -webkit-transform:rotate(-70deg); -moz-transform:rotate(-70deg); transform:rotate(-70deg);}
+.hairlbg .hairline4{width:70px; height:40px; left:40px; top:40px; border-radius:50%; -webkit-transform:rotate(-90deg); -moz-transform:rotate(-90deg); transform:rotate(-90deg);}
+.hairlbg .hairline5{width:70px; height:40px; left:60px; top:20px; border-radius:50%; -webkit-transform:rotate(-100deg); -moz-transform:rotate(-100deg); transform:rotate(-100deg);}
+
+/*蝴蝶结*/
+.bow{width: 18px; height:32px; position: absolute; z-index: 21; }
+.bowl{left:90px; top:180px; -webkit-transform:rotate(-30deg); -moz-transform:rotate(-30deg); transform:rotate(-30deg);}
+.bow .bowinner{width:18px; position:absolute; height:18px; line-height:18px; border-radius:50%; background:#f2a1b4;}
+.bow .bottom{bottom:0;}
+.bowlbg{margin-left:3px; z-index: 14;}
+.bowlbg .bowinner{background:#e05081;}
+.hairr{right:0;}
+
+.hairr{left:368px; -webkit-transform:rotate(240deg); -moz-transform:rotate(240deg); transform:rotate(240deg);}
+.hairrbg{left:360px; -webkit-transform:scale(-1,1);  -moz-transform:scale(-1,1);  transform:scale(-1,1); }
+.bowr{left:358px; -webkit-transform:scale(-1,1);  -moz-transform:scale(-1,1);  transform:scale(-1,1); }
+.bowrbg{margin-left:-3px; z-index: 14;}
+.bowrbg .bowinner{background:#e05081;}
+/*书包*/
+.bag{width: 100px; height:90px; top:320px; left:180px; position: absolute; z-index: 4;}
+.bag .bagbelt{width:50px; height:90px; margin-left:20px; margin-top:-30px; border:#dcae43 solid 6px; border-radius: 50%;  -webkit-transform:rotate(30deg); -moz-transform:rotate(30deg); transform:rotate(30deg);}
+.bag .bagCenter{width: 40px; height:40px; background:#e1ad5d; overflow:hidden; border-radius: 30%; position: absolute; left:14px; bottom: 0; -webkit-transform:rotate(10deg); -moz-transform:rotate(10deg); transform:rotate(10deg); box-shadow:inset -5px 0 5px #dcae43;}
+.bag .bagCenter .bagLid{width: 40px; height:40px; border-radius:50%; border-bottom: #ec9f3a solid 2px;  position:absolute; left:-4px; top:-26px;  -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); transform:rotate(0deg);}
+.bag .bagCenter .bagborder{width: 40px; height:60px; border-radius:50%; border-right: #d29f45 solid 1px; margin-top:-10px; margin-left:-8px;  -webkit-transform:rotate(30deg); -moz-transform:rotate(30deg); transform:rotate(30deg);}
+
+
+/*裙子*/
+.skirtBox{width: 156px; height:70px; position: absolute; left:158px; top:340px; z-index:3;}
+.skirtBox .top{width: 88px; height:70px; left:32px; background:#e05882; overflow:hidden; position: relative;}
+.skirtBox .top .left{background:#fff; position: absolute;  left:-57px; top:-20px; width:60px; height:100px; border-radius:50%; border:#d92581 solid 1px; -webkit-transform:rotate(30deg); -moz-transform:rotate(30deg); transform:rotate(30deg);}
+.skirtBox .top .right{background:#fff; position: absolute; right:-57px;top:-20px; width:60px; height:100px; border-radius:50%; border:#d92581 solid 1px; -webkit-transform:rotate(-30deg); -moz-transform:rotate(-30deg); transform:rotate(-30deg);}
+.skirtBox .top .top{background:#fff; position: absolute; left:19px; width:50px;  height:60px;  top:-40px; border-radius:30%; border:#d92581 solid 1px;}
+.skirtBox .top .top .center{width:6px; height:6px; background:#dfd0c3; border-radius:50%; left:22px; bottom:4px; position: absolute;}
+.skirtBox .bottom{background:#e05882; width: 100px; left:26px; height:70px; border-radius: 50%; position:absolute; top:26px;}
+
+/*脚*/
+.footBox{width: 110px; height:80px; position: absolute; left:178px; top:420px; z-index: 1;}
+.footBox .foot{width: 36px; height:72px; position: absolute; top:0; background: #f9cdaf;}
+.footBox .footLeft{ border-bottom-left-radius: 20%; border-bottom-right-radius: 40%; left:16px;  -webkit-transform:rotate(5deg); -moz-transform:rotate(5deg); transform:rotate(5deg);}
+.footBox .footRight{ border-bottom-right-radius: 20%; border-bottom-left-radius: 40%;  left:58px; -webkit-transform:rotate(-5deg); -moz-transform:rotate(-5deg); transform:rotate(-5deg); }
+.footBox .footLeft .shoe{width: 36px; height:46px; overflow:hidden;  background:#f4d641; position: absolute; bottom: 0;  border-bottom-left-radius: 20%; border-bottom-right-radius: 40%; }
+.footBox .footRight .shoe{width: 36px; height:46px; overflow:hidden;  background:#f4d641; position: absolute; bottom: 0;  border-bottom-right-radius: 20%; border-bottom-left-radius: 40%; }
+
+.footBox .foot .shoe .top{width:40px; height:40px; border-radius: 50%; background:#f9cdaf; position: absolute; top:-10px; border-bottom: #f5d82e solid 2px;}
+
+
+/*手*/
+.hand{position: absolute; top:336px; }
+.handLeft{position: absolute;  left:160px;  -webkit-transform:rotate(20deg); -moz-transform:rotate(20deg); transform:rotate(20deg);}
+.hand .white{border-right: 46px solid #fffffe;  border-top: 4px solid transparent;   border-bottom: 8px solid transparent;   border-left: 0 solid transparent; border-bottom-left-radius:50%;  height: 38px;  width: 0px;}
+.hand .pink{height:24px; border-right: 30px solid #f7ccac; border-radius:20px; position:absolute; right:32px; top:2px;  border-top: 4px solid transparent;   border-bottom: 8px solid transparent;   border-left: 0 solid transparent;}
+.hand .palm{width: 50px; height:33px; background:#f7ccac; position: absolute; right:30px; top:3px; border-radius:50%; -webkit-transform:rotate(10deg); -moz-transform:rotate(10deg); transform:rotate(10deg);}
+.hand .finger{width: 20px; height:6px; line-height:6px; overflow:hidden;  background:#f7ccac; border-radius: 50%; position: absolute;}
+.hand .finger1{right:60px; height:20px;  top:0px; -webkit-transform:rotate(20deg); -moz-transform:rotate(20deg); transform:rotate(20deg);}
+.hand .finger2{right:60px; width:30px; height:16px;  top:10px;  -webkit-transform:rotate(40deg); -moz-transform:rotate(40deg); transform:rotate(40deg);}
+.hand .finger3{right:56px; width:30px; height:16px;  top:16px;  }
+/*右手*/
+.handRight{position: absolute;  left:264px;  -webkit-transform:rotate(20deg); -moz-transform:rotate(20deg); transform:rotate(20deg); -moz-transform:scaleX(-1);   -webkit-transform:scaleX(-1);    -o-transform:scaleX(-1);    transform:scaleX(-1);    /*IE*/    filter:FlipH;}
+
+/*站台*/
+.platform{width:326px; height:36px; background:#cc8025; border-radius: 50%; position: absolute; bottom: 0; left:76px;}
+

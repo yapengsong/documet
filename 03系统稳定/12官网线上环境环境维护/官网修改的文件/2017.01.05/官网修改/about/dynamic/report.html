@@ -1,0 +1,173 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" xmlns="http://www.w3.org/1999/html"/>
+<title>易云捷讯-企业云上易云</title>
+<link href="/style/style.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+<#include "/wwwroot/yymh/template/common/top.html">
+<#include "/wwwroot/yymh/template/common/header_content.html">
+ 
+<table width="1200" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table height="40" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+      <tbody>
+        <tr>
+          <td class="navv"><a class="navv" href="/">首页</a> &gt;
+                            <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158437637fc00ea'}")>
+                            <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}">关于我们</a>&gt;
+                            </#if>
+                                <strong>新闻动态</strong></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+</table>
+<table width="1200" border="0" cellspacing="0" cellpadding="0" class="warp1200">
+  <tr>
+    <td width="210" valign="top" bgcolor="#F8F8F8">
+    <div class="erjititle">
+        关于我们
+    </div>
+            <ul class="menucont gywm">
+            	  <li  class="twomenu gsjj228">
+                   <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158437637fc00ea'}")>
+                     <#if catalog?exists>
+                     <a href="${catalog.url!'javascript:void(0);'}">公司简介</a>
+                     </#if>
+                </li>
+                <li class="product_line"></li>
+                <li  class="twomenu ryzz228">
+                     <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158437534f100e2'}")>
+                     <#if catalog?exists>
+                     <a href="${catalog.url!'javascript:void(0);'}">资质荣誉</a>
+                     </#if>
+                </li>
+                <li class="product_line"></li>
+                <li  class="twomenu xwdt228_on">
+                     <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584377b29b00f2'}")>
+                     <#if catalog?exists>
+                     <a href="${catalog.url!'javascript:void(0);'}">新闻动态</a>
+                     </#if>
+                </li>
+                <li class="product_line"></li>
+                <li  class="twomenu tzzgx228">
+                          <span class="clickspan">
+                            投资者关系
+                            </span>
+                            <span class="close"></span>
+                            <div class="child">
+                                <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584375ba3900e6'}")>
+                                <#if catalog?exists> 
+                                    <div class="threemenu"><a href="${catalog.url!'javascript:void(0);'}">基本信息</a></div>
+                                </#if>
+                                <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584374bf9600de'}")>
+                                <#if catalog?exists> 
+                                    <div class="threemenu"><a href="${catalog.url!'javascript:void(0);'}">公司公告</a></div>
+                                </#if>
+                            </div>
+                </li>
+                <li class="product_line"></li>
+                <li  class="twomenu lxwm228">
+                     <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584374273c00da'}")>
+                     <#if catalog?exists>
+                     <a href="${catalog.url!'javascript:void(0);'}">联系我们</a>
+                     </#if>
+                </li>
+                <li class="product_line"></li>
+                <li  class="twomenu jrwm228">
+                     <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584376b0d800ee'}")>
+                     <#if catalog?exists>
+                     <a href="${catalog.url!'javascript:void(0);'}">加入我们</a>
+                     </#if>
+                </li> 
+                <li class="product_line"></li>
+                </ul></td>
+    <td width="20">&nbsp;</td>
+    <td width="960" valign="top">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+          <h2>新闻动态</h2></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      	<ul class="news_nav clearfix">
+        	<li>
+            <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584377b29b00f2'}")>
+                <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}">全部</a>
+                </#if>
+          	</li>
+        	<li><#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843784ac800f6'}")>
+            <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}">易云</a>
+            </#if></li>
+        	<li class="current"><#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584378cf7700fa'}")>
+            <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}">媒体</a>
+            </#if></li>
+            <div class="clear"></div>
+        </ul>
+        <tr>
+          <td>         
+                <#assign name ="catalogTag">
+				<#assign catalogTag =newTag("${name}")>
+				<#assign catalog =catalogTag("{'levels':'self','name':'402890e758434aaa01584378cf7700fa'}")>
+					<#if catalog?exists>
+						<ul class="contentH">
+							<#assign articleTag =newTag("articleTag")>
+							<#assign articleList =articleTag("{'name':'${catalog.id}',count:'10','page':true,'pagesize':'10','pageindex':'${pageindexF}'}")>
+							<#if articleList?exists && articleList?size gt 0>
+								<#list articleList as article>
+								<li  class="news">
+                                	 <table>
+                                        <td width=68 valign="top"> 
+                                            <h4 class="news_day"><#if article.published?exists>${article.published?string('dd')}</#if></h4>
+                                            <p class="news_month"><#if article.published?exists>${article.published?string('MM')}</#if>月</p>
+                                        </td>
+                                        <td>
+                                            <h4 class="news_title">${article.title}</h4>
+                                            <span class="news_mark news_mark_orange">${article.sourceid!''}</span>
+                                            <p class="news_content">${article.digest}</p>
+                                            <a  href="${article.url!'javascript:void(0);'}" class="news_link">查看详情&gt;&gt;</a>
+                                        </td>
+                                    </table>
+								</li>
+								</#list>
+							</#if>
+						</ul>
+				</#if>
+          </td>
+        </tr>
+      </table>
+      <table height="43" cellspacing="0" cellpadding="4" width="100%" align="center"  border="0" style="margin-bottom:80px; margin-top:40px">
+        <tbody>
+          <tr>
+            <td align="left" height="50">
+                ${pagebar}
+            </td>
+          </tr>
+        </tbody>
+    </table></td>
+  </tr>
+</table>
+	<#include "/wwwroot/${sitePath}/template/common/foot_content.html">
+<script type="text/javascript" src="/script/jquery.min.js"></script>
+<script type="text/javascript" src="/script/left_menu.js"></script>
+<script type="text/javascript" src="/script/header.js"></script>
+<script>
+$(document).ready(function(e) {
+    
+	var markHtml = $(".news_mark").html();
+	if ( markHtml == "易云"){
+		$(this).removeClass("news_mark").addClass("news_mark_blue");
+	}
+});
+
+</script>
+</body>
+</html>
+

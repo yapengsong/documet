@@ -1,0 +1,1 @@
+ALTER TABLE `cloud_volume` ADD INDEX `idx_from_snapid` (`from_snapid` ASC);

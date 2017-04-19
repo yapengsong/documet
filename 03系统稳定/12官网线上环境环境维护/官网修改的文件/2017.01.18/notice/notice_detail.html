@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>易云捷讯-企业云上易云</title>
+<meta name="keywords" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<link href="/style/style.css" rel="stylesheet">
+
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+</head>
+<body>
+
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+<div class="nav_menu">
+    <table  width="100%" height="68" border="0" cellspacing="0" cellpadding="0" class="wrapper" >
+        <tr>
+            <td height="68" ><a href="/"><img src="../../../images/index_logo_03.png" width="105" height="37" /></a></td>
+        </tr>
+    </table>
+</div>
+
+    <table width="1200" border="0" cellspacing="0" cellpadding="0" class="warp1200">
+         <td  valign="top"  class="news_article_content">
+         	<div class="contentH">
+            <h2 class="news_article" style="text-align:center;">${contentF.title!''}</h2>
+            <p>${articleDataF.content!''}</p>
+            </div>
+         </td>
+     </table>
+	<div class="cl"></div>
+    <script type="text/javascript" src="/script/jquery.min.js"></script>
+    <script type="text/javascript" src="/script/left_menu.js"></script>
+<script type="text/javascript" src="/script/header.js"></script>
+    	<script language="JavaScript" type="text/JavaScript">
+	window.onload = function(){
+	var contentid = "${contentF.id?if_exists}";
+	var urlStr = "${contextpath}/contentsController.do?addPv";
+		$.ajax({
+			type:'post',
+			url:urlStr,
+			data:"contentId="+contentid,
+			success:function(msg){
+			}
+		});
+	}
+		
+			
+		function fontZoom(size) {
+			document.getElementById('fontZoom').style.fontSize = size + 'px';
+			document.getElementById('fontZoom').style.lineHeight = size * 2
+					+ 'px';
+		}
+		var newsid = 14598;
+	</script>
+	
+
+</body>
+</html>

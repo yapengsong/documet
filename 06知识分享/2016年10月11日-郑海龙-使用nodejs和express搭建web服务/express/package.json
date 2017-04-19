@@ -1,0 +1,20 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "repository": "",
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "https://registry.npmjs.org/debug/-/debug-2.2.0.tgz",
+    "express": "^4.14.0",
+    "html": "^1.0.0",
+    "ico": "^0.3.3",
+    "jade": "^1.11.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "start": "node ./bin/www"
+  }
+}

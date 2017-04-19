@@ -1,0 +1,2 @@
+/usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/common/foot_content.html
+nginx/default.conf

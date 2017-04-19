@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>易云捷讯-企业云上易云</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+
+<link href="/style/style.css" type="text/css" rel="stylesheet"/><!-- 
+<link rel="shortcut  icon" type="image/x-icon" href="/favicon.ico" media="screen"> -->
+
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="occlusion">
+    <div style="margin: 100px 25%;position: relative;">
+        <video id="video" width="100%" controls></video>
+        <div class="close"><img src="../images/close.png"></div>
+    </div>
+</div>
+
+<#include "/wwwroot/yymh/template/common/top.html">
+
+<div id="banner">
+ 	<#include "/wwwroot/yymh/template/common/header.html">
+    <ul id="slides">
+        <li style="background:url('../images/banner8.jpg') no-repeat center top; position:relative">
+            <a href="http://www.eayun.com/market/list.shtml"><div class="banner_content">
+            </div></a>
+        </li>
+        <li style="background:url('../images/banner7.jpg') no-repeat center top; position:relative">
+            <a href="http://www.eayun.com/about/dynamic/index/000000005961c797015aa828e3550116.shtml"><div class="banner_content">
+                <h4>ICP备案中心正式上线</h4>
+                <p>专员校验备案信息，提高备案效率</p>
+            </div></a>
+        </li>
+        <li style="background:url('../images/banner6.jpg') no-repeat center top; position:relative">
+            <a href="http://www.eayun.com/about/dynamic/index/000000005961c797015aa828e3550116.shtml"><div class="banner_content">
+                <h4>CDN正式上线</h4>
+                <p>加速节点智能分配，提供更快网络体验</p>
+            </div></a>
+        </li>
+        <li style="background:url('../images/banner5.jpg') no-repeat center top; position:relative">
+            <a href="http://www.eayun.com/about/dynamic/index/000000005961c797015aa828e3550116.shtml"><div class="banner_content">
+                <h4>回收站功能正式上线</h4>
+                <p>方便数据快速找回，打造安全暂存空间</p>
+            </div></a>
+        </li>
+        <!--<li style="background:url('../images/banner3.jpg') no-repeat center top; position:relative">
+            <div class="banner_content">
+                <h4>即将开放所有API</h4>
+                <p>部署灵活 . 快速操作 . 精确使用</p>
+                 <a class="index_content">查看详情</a> 
+            </div>
+        </li>-->
+        <li style="background:url('../images/banner2.jpg') no-repeat center top; position:relative">
+            <div class="banner_content">
+                <h4>易云私有云</h4>
+                <p>带给企业安全、高效、稳定的IT私有云架构</p>
+                <#assign catalog=catalogTag("{'levels':'self','name':'402890e758aee6e50158aefb7c520016'}")>
+                    <#if catalog?exists>
+                    <a class="index_content" href="${catalog.url!'javascript:void(0);'}" target="_blank">查看详情</a>
+                    </#if>
+            </div>
+        </li>
+        <li style="background:url('../images/banner1.jpg') no-repeat center top; position:relative">
+            <div class="banner_content">
+                <h4>易云公有云</h4>
+                <p>专注于企业级服务的公有云产品</p>
+                <a href="http://console.eayun.cn/#/sys/register" class="index_regester" target="_blank">立即注册</a>
+                <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843617ad8007e'}")>
+                    <#if catalog?exists>
+                        <a href="${catalog.url!'javascript:void(0);'}"  class="index_content">查看详情</a>
+                    </#if>
+            </div>
+        </li>
+        <!-- <li style="background:url('../images/banner4.jpg') no-repeat center top; position:relative">
+            <div class="banner_content">
+                <h4>计费功能即将上线</h4>
+                <p>开启管理控制台新时代</p>
+            </div>
+        </li> -->
+
+
+    </ul>
+</div>
+<div class="index_video">
+	<div class="index_video_inner">
+        <div class="video_news">
+            <div class="video_content">
+                <h4><span>厉害了，</span>易云股份</h4>
+                <p>央视《新闻联播》聚焦易云科技创新<img src="../images/index_video_play_15.png"><p>
+            </div>
+            <div class="video_img">
+                <img src="../images/index_video_img_12.png">
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="video_five">
+            <p>五分钟带您了解易云股份<img src="../images/index_video_play_15.png"></p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="claer"></div>
+<div id="wrapper">
+    丰富的产品与服务
+</div>
+<div class="index_product">
+    <table border="0" cellspacing="0" cellpadding="0" class="wrapper">
+        <tr>
+            <td class="index_computer" valign="top">
+                <div class="index_product_content">
+                    <h4>计算与存储</h4>
+                    <p>安全稳定、秒级创建、可按需调整的计算服务，高可靠、大容量、持久稳定的块存储和对象存储服务。</p>
+                </div>
+                <div class="active">
+                    <h4>计算与存储</h4>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843617ad8007e'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>云主机</span></a>
+                    </#if>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843622f4c0082'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>云硬盘</span></a>
+                    </#if>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584364bae1008e'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>对象存储</span></a>
+                    </#if>
+                </div>
+            </td>
+            <td class="index_net" valign="top">
+                <div class="index_product_content">
+                    <h4>网络</h4>
+                    <p>私有网络独立隔离，自定义网段划分，路由端口映射节省公网IP地址，负载均衡实现访问流量分配，轻松应对高流量并发。</p>
+                </div>
+                <div class="active">
+                    <h4>网络</h4>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436762bf00a2'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>私有网络</span></a>
+                    </#if>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584362e6700086'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>负载均衡</span></a>
+                    </#if>
+                </div>
+            </td>
+            <td class="index_cloud" valign="top">
+                <div class="index_product_content">
+                    <h4>云监控</h4>
+                    <p>丰富多样的监控指标，灵活可配的监控策略，精准定位的实时监控，有效地预防和应对任何异常情况。</p>
+                </div>
+                <div class="active">
+                    <h4>云监控</h4>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843642beb008a'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>CPU</span></a>
+                    </#if>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843642beb008a'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>内存</span></a>
+                    </#if>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843642beb008a'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>磁盘IO</span></a>
+                    </#if>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843642beb008a'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>网络流量</span></a>
+                    </#if>
+                </div>
+            </td>
+            <td class="index_safe" valign="top">
+                <div class="index_product_content">
+                    <h4>安全与防护</h4>
+                    <p>提供网络安全、服务器安全等基础安全服务，主动防御、被动防护灵活配置，更有效地抵御攻击、发现漏洞，实时掌握业务安全动态。</p>
+                </div>
+                <div class="active">
+                    <h4>安全与防护</h4>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436542240092'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>防火墙</span></a>
+                    </#if>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584365c5f10096'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>漏洞扫描</span></a>
+                    </#if>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436644e7009a'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>IPS</span></a>
+                    </#if>
+                </div>
+            </td>
+            <td class="index_service" valign="top">
+                <div class="index_product_content">
+                    <h4>服务与支持</h4>
+                    <p>专业的运维团队，7×24小时随时待命，全心全意提供贴心服务和保障。</p>
+                </div>
+                <div class="active">
+                    <h4>服务与支持</h4>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584366db3b009e'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>专属定制</span></a>
+                    </#if>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584366db3b009e'}")>
+                    <#if catalog?exists>
+                    <a href="${catalog.url!'javascript:void(0);'}"><span>7×24支持</span></a>
+                    </#if>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="index_choose">
+	<div class="index_choose1 index_scroll1">
+    	<div class="index_choose_top">
+            <h4>优质的IaaS服务提供商</h4>
+            <p>行业定制化的云计算服务，为企业节省巨大的IT运维成本，保证业务运行稳定，助力企业更好更快发展</p>
+            <ul class="index_choose_nav clearfix">
+            	<li class="index_choose_nav1 active"></li>
+                <li class="index_choose_nav2"></li>
+                <li class="index_choose_nav3"></li>
+                <li class="index_choose_nav4"></li>
+            </ul>
+        </div>
+        <div class="index_choose_content">
+            <div class="index_choose_content1 active">
+                <h4>降低采购运维成本</h4>
+                <p>为企业节约采购软、硬件设备的大量经费，后期不需要投入人力来进行部署和维护，不需要关心运营等事宜，可以有效地节省物力和人力成本。</p>
+            </div>
+            <div class="index_choose_content2">
+                <h4>弹性应对工作负荷</h4>
+                <p>私有环境下，企业客户的计算资源有限，当出现大规模计算量增加时，往往捉襟见肘难以应对。而公有云资源随用随取，用后即销，可以快速应对企业对计算、网络及存储的各种需求。</p>
+            </div>
+            <div class="index_choose_content3">
+                <h4>保护业务可持续性</h4>
+                <p>要防止数据中心故障，一些企业构建了跨多个数据中心的地理集群，然而构建地理集群是昂贵和复杂的。企业可以使用公有云来保护关键任务工作负载，通过镜像模板批量创建云主机，利用VPN或专线保持数据同步，关键的工作负载即便在主数据中心断线的情况下也可以继续工作。</p>
+            </div>
+            <div class="index_choose_content4">
+                <h4>摆脱办公地理限制</h4>
+                <p>企业在更换办公地址时需要付出怎样的成本？如果使用公有云服务，这一过程就会变得非常简单，并且还能在重置迁移过程中不影响员工对内部数据的访问。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="safe_title">
+    <h4>荣获多项资质荣誉</h4>
+    <div>
+        <img src="../images/zizhi_01.png" />
+        <img src="../images/zizhi_02.png" />
+        <img src="../images/zizhi_03.png" />
+        <img src="../images/zizhi_04.png" />
+        <img src="../images/zizhi_05.png" />
+    </div>
+    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158437534f100e2'}")>
+    <#if catalog?exists> <a  class="leveltwolink" href="${catalog.url!'javascript:void(0);'}" >查看全部资质荣誉&nbsp;&gt;</a> </#if>
+</div>
+<div class="safe_content">
+	<div class="safe_content_inner">
+       <h4>竭诚守护安全，企业信赖之选</h4>
+       <ul>
+           <li>
+           		<img src="../images/index_safe_img_53.png" style="padding-bottom: 7px;">
+                <h5>7X24小时</h5>
+                <p>售后支持</p>
+           </li>
+           <li>
+           		<img src="../images/index_safe_img_57.png">
+                <h5>99.95%以上</h5>
+                <p>服务可用性</p>
+           </li>
+           <li>
+           		<img src="../images/index_safe_img_59.png" style="padding-bottom: 9px;">
+                <h5>0元</h5>
+                <p>免费体验</p>
+           </li>
+           <li>
+           		<img src="../images/index_safe_img_55.png">
+                <h5>0元</h5>
+                <p>免费备案</p>
+           </li>
+           <li>
+           		<img src="../images/index_safe_img_61.png" style="padding-bottom: 3px;">
+                <h5>5天</h5>
+                <p>无理由退款</p>
+           </li>
+           <div class="clear"></div>
+       </ul>
+    </div>
+       <p>立即注册，享受易云的更多服务</p>
+       <a href="http://console.eayun.cn/#/sys/register" target="_blank">立即注册</a>
+</div>
+<div class="index_news">
+	<h4>新闻动态</h4>
+    <ul>
+        <#assign name ="catalogTag">
+            <#assign catalogTag =newTag("${name}")>
+                <#assign catalog =catalogTag("{'levels':'self','name':'402890e758434aaa01584377b29b00f2'}")>
+                    <#if catalog?exists>
+                            <#assign articleTag =newTag("articleTag")>
+                                <#assign articleList =articleTag("{'name':'${catalog.id}',count:'6'}")>
+                                    <#if articleList?exists && articleList?size gt 0>
+                                        <#list articleList as article>
+                                            <li>
+                                                 <a  href="${article.url!'javascript:void(0);'}"><span>${article.published?string('yyyy-MM-dd')}</span>${article.title}</a>
+                                            </li>
+                                        </#list>
+                                    </#if>
+                    </#if>
+                    <div class="clear"></div>
+                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584377b29b00f2'}")>
+                    <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}">更多...</a>
+                    </#if>
+    </ul>
+</div>
+
+<div class="right_bar">
+</div>
+<#include "/wwwroot/${sitePath}/template/common/foot.html">
+
+<!-- 代码 开始 -->
+
+<script type="text/javascript" src="/script/jquery.min.js"></script>
+<script type="text/javascript" src="/script/header.js"></script>
+<script type="text/javascript" src="/script/jquery.jslides.js"></script>
+<script type="text/javascript" src="/script/jquery.mousewheel.min.js"></script>
+
+<!--鼠标轮播效果-->
+<script type="text/javascript">
+     $(function(){
+        var index = 1;
+
+        function stop(event){
+            event.stopPropagation();
+            event.preventDefault();
+
+        };
+
+        function next(){
+            hide();
+            index++;
+            show();
+        };
+
+        function back(){
+            hide();
+            index--;
+            show();
+        };
+
+        function goto(_index){
+            hide();
+            index = _index;
+            show();
+        };
+
+        function hide(){
+            $('.index_choose_nav'+index).removeClass('active');
+            $('.index_choose1').removeClass('index_scroll'+index);
+            $('.index_choose_content'+index).removeClass('active');
+        };
+        function show(){
+            $('.index_choose_nav'+index).addClass('active');
+            $('.index_choose1').addClass('index_scroll'+index);
+            $('.index_choose_content'+index).addClass('active');
+        };
+
+        $('.index_choose_nav li').each( function(index) {
+            $(this).click(function(){
+                goto(index+1);
+            });
+        });
+
+
+        $('body').on('mousewheel', function(event) {
+            if(!event.altKey && !event.ctrlKey){
+                var offsetTop = parseInt($('.index_choose_nav').offset().top),
+                    //scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop,
+                    scrollTop = $('body').scrollTop(),
+                    deltaY = event.deltaY * event.deltaFactor;
+
+
+                if(event.deltaY>0){
+                    if (index > 1) {
+                        if(scrollTop == offsetTop && index < 5){
+                            back();
+                            stop(event);
+                        }
+
+                        // if(navigator.userAgent.indexOf("MetaSr")>0) {
+                        //     if((scrollTop + 30)== offsetTop && index < 5){
+                        //         back();
+                        //         stop(event);
+                        //     }
+                        // }
+
+                        // if((navigator.userAgent.indexOf("Trident")>0) & (navigator.userAgent.indexOf("MetaSr")<0)) {
+                
+                        //     if((scrollTop + 10)== offsetTop && index < 5){
+                        //         back();
+                        //         stop(event);
+                        //     }
+                        // }  
+
+                        // if((navigator.userAgent.indexOf("Chrome")>0) || (isSafari=navigator.userAgent.indexOf("Safari")>0)) {
+                            
+                        //     if(scrollTop == offsetTop && index < 5){
+                        //         back();
+                        //         stop(event);
+                        //     }
+                        // }
+
+                        // if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){
+                        //     if((scrollTop+33) == offsetTop && index < 5){
+                        //         back();
+                        //         stop(event);
+                        //     }
+                        // }  
+                        if(scrollTop - deltaY < offsetTop){
+                            $('body').animate({scrollTop:offsetTop},10);
+                        }
+                    }
+                } else {
+                    if (index < 4) {
+
+                        if(scrollTop == offsetTop && index < 5){
+                            next();
+                            stop(event);
+                        }  
+
+                        // //ie11浏览器
+                        // if(navigator.userAgent.indexOf("MetaSr")>0) {
+                        //     if((scrollTop + 30)== offsetTop && index < 5){
+                        //         next();
+                        //         stop(event);
+                        //     }
+                        // }
+                        //  //ie10以下和edge浏览器
+                        // if((navigator.userAgent.indexOf("Trident")>0) & (navigator.userAgent.indexOf("MetaSr")<0)) {
+                        //     if((scrollTop + 10)== offsetTop && index < 5){
+                        //         next();
+                        //         stop(event);
+                        //     }
+                        // } 
+
+                        // //谷歌和safari浏览器
+                        // if((navigator.userAgent.indexOf("Chrome")>0) || (isSafari=navigator.userAgent.indexOf("Safari")>0)) {
+                        //     if(scrollTop == offsetTop && index < 5){
+                        //         next();
+                        //         stop(event);
+                        //     }
+                        // }
+
+                        // //火狐浏览器
+                        // if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){
+                        //     if((scrollTop+33) == offsetTop && index < 5){
+                        //         next();
+                        //         stop(event);
+                        //     }
+                        // }  
+                        
+                        if(scrollTop - deltaY > offsetTop){
+                            $('body').animate({scrollTop:offsetTop},10);
+                            stop(event);
+                        }
+                    }
+
+                }
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.video_five').click(function(){
+            $('video').attr('src','http://website-video.eos.eayun.com/eayun.mp4');
+            $('.occlusion').show();
+            var video = document.getElementById('video');
+            video.play();
+        });
+        $('.video_img img,.video_content img').click(function(){
+            $('video').attr('src','http://20170202.eos.eayun.com/eayun_lhl.mp4');
+            $('.occlusion').show();
+            var video = document.getElementById('video');
+            video.play();
+        });
+        $('.occlusion .close').click(function(){
+            $('.occlusion').hide();
+            var video = document.getElementById('video');
+            video.load();
+        });
+    });
+</script>
+
+<!-- 代码 结束 -->
+
+</body>
+</html>
+

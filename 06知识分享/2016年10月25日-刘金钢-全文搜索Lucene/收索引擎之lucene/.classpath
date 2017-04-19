@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/lucene-core-5.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-highlighter-5.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/common/lucene-analyzers-common-5.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/icu/lucene-analyzers-icu-5.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/icu/lib/icu4j-54.1.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/kuromoji/lucene-analyzers-kuromoji-5.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/morfologik/lib/morfologik-fsa-1.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/morfologik/lib/morfologik-polish-1.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/morfologik/lib/morfologik-stemming-1.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/morfologik/lucene-analyzers-morfologik-5.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/phonetic/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/phonetic/lucene-analyzers-phonetic-5.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/smartcn/lucene-analyzers-smartcn-5.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/stempel/lucene-analyzers-stempel-5.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/uima/lib/Tagger-2.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/uima/lib/uimaj-core-2.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/uima/lib/WhitespaceTokenizer-2.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/analysis/uima/lucene-analyzers-uima-5.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-analyzers-2.4.1.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-queryparser-5.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-memory-5.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-commercial-5.1.30-bin.jar"/>
+	<classpathentry kind="lib" path="lib/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc6.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

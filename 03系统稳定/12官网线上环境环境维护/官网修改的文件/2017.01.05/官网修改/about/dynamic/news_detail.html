@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>易云捷讯-企业云上易云</title>
+<meta name="keywords" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<link href="/style/style.css" rel="stylesheet">
+
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+</head>
+<body>
+<#include "/wwwroot/yymh/template/common/top.html">
+<#include "/wwwroot/${sitePath}/template/common/header_content.html">
+
+<table width="1200" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table height="40" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+      <tbody>
+        <tr>
+          <td class="navv"><a class="navv" href="/">首页</a> &gt;
+                            <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158437637fc00ea'}")>
+                            <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}">关于我们</a>&gt;
+                            </#if>
+                                <strong>新闻动态</strong></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+</table>
+    <table width="1200" border="0" cellspacing="0" cellpadding="0" class="warp1200">
+        <td width="210" valign="top" bgcolor="#F8F8F8">
+            <#include "/wwwroot/${sitePath}/template/common/news_left.html">
+         </td>
+         <td width="20"  valign="top" >&nbsp;</td>
+         <td width="960"  valign="top"  class="news_article_content">
+         	<div class="contentH">
+            <h2 class="news_article">${contentF.title!''}</h2>
+            <p>${articleDataF.content!''}</p>
+            </div>
+         </td>
+     </table>
+	<div class="cl"></div>
+	<#include "/wwwroot/${sitePath}/template/common/foot_content.html">
+    <script type="text/javascript" src="/script/jquery.min.js"></script>
+    <script type="text/javascript" src="/script/left_menu.js"></script>
+<script type="text/javascript" src="/script/header.js"></script>
+    	<script language="JavaScript" type="text/JavaScript">
+	window.onload = function(){
+	var contentid = "${contentF.id?if_exists}";
+	var urlStr = "${contextpath}/contentsController.do?addPv";
+		$.ajax({
+			type:'post',
+			url:urlStr,
+			data:"contentId="+contentid,
+			success:function(msg){
+			}
+		});
+	}
+		
+			
+		function fontZoom(size) {
+			document.getElementById('fontZoom').style.fontSize = size + 'px';
+			document.getElementById('fontZoom').style.lineHeight = size * 2
+					+ 'px';
+		}
+		var newsid = 14598;
+	</script>
+	
+
+</body>
+</html>

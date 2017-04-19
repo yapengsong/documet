@@ -1,0 +1,197 @@
+
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+<div class="nav_menu">
+    <table  width="100%" height="68" border="0" cellspacing="0" cellpadding="0" class="wrapper" >
+        <tr>
+            <td><a href="/"><img src="../../images/index_logo_03.png" width="105" height="37" /></a></td>
+            <td><div class="main">
+                    <ul>
+                        <!--私有云导航--> 
+                        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758aee6e50158aefb7c520016'}")>
+                        <#if catalog?exists>
+                        <li><span class="level2"><a
+							href="${catalog.url!'javascript:void(0);'}" target="_blank">企业私有云</a></span> </li>
+                        </#if> 
+                        <!--服务与产品--> 
+
+                        <li><span class="level">
+                            <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843617ad8007e'}")>
+                            <#if catalog?exists>
+                            <a  class="levelthree" href="${catalog.url!'javascript:void(0);'}">
+                            产品与服务
+                            </a>
+                            </#if>
+                            </span>
+                            <div class="childopen"> 
+                            	<div class="level_menu">
+                                	<span class="leveltwo"> 计算与存储</span>
+                                    <div class="child_menu">
+                                    	<#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843617ad8007e'}")>
+                                        <#if catalog?exists>
+                                        <a  class="levelthree" href="${catalog.url!'javascript:void(0);'}">云主机</a>
+                                        </#if> 
+                                        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843622f4c0082'}")>
+                                        <#if catalog?exists>
+                                        <a  class="levelthree" href="${catalog.url!'javascript:void(0);'}">云硬盘</a>
+                                        </#if> 
+                                        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584364bae1008e'}")>
+                                        <#if catalog?exists>
+                                        <a  class="levelthree" href="${catalog.url!'javascript:void(0);'}">对象存储</a>
+                                        </#if> 
+                                    </div>
+                               </div>
+                               <div class="level_menu">
+                                    <span class="leveltwo">网络</span>
+                                    <div class="child_menu">
+                                    	<#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436762bf00a2'}")>
+                                        <#if catalog?exists>
+                                        <a  class="levelthree" href="${catalog.url!'javascript:void(0);'}">私有网络</a>
+                                        </#if> 
+                                        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584362e6700086'}")>
+                                        <#if catalog?exists>
+                                        <a  class="levelthree" href="${catalog.url!'javascript:void(0);'}">负载均衡</a>
+                                        </#if>  
+                                    </div>
+                               </div>
+                               
+
+                                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843642beb008a'}")>
+                                    <#if catalog?exists> <a  class="leveltwolink" href="${catalog.url!'javascript:void(0);'}">云监控</a></#if>
+                                    
+                              <div class="level_menu"> 
+                                	<span class="leveltwo"> 安全与防护</span>
+                                    <div class="child_menu">
+                                    	<#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436542240092'}")>
+                                        <#if catalog?exists>
+                                        <a  class="levelthree" href="${catalog.url!'javascript:void(0);'}" >防火墙</a>
+                                        </#if> 
+                                        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584365c5f10096'}")>
+                                        <#if catalog?exists>
+                                        <a  class="levelthree" href="${catalog.url!'javascript:void(0);'}">漏洞扫描</a>
+                                        </#if> 
+                                        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436644e7009a'}")>
+                                        <#if catalog?exists>
+                                        <a  class="levelthree" href="${catalog.url!'javascript:void(0);'}" >IPS</a>
+                                        </#if> 
+                                    </div>
+                              </div>
+                                    
+                                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584366db3b009e'}")>
+                                    <#if catalog?exists> <a  class="leveltwolink" href="${catalog.url!'javascript:void(0);'}" >服务与支持</a> </#if> </div>
+                        </li>
+                         <!--价格-->
+
+                        <li> <span class="level">
+                            <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584368b45c00aa'}")>
+                            <#if catalog?exists>
+                            <a href="${catalog.url!'javascript:void(0);'}"  class="levelthree">
+                            价格
+                            </a>
+                            </#if>
+                            </span>
+                            <div class="childopen"> 
+                                <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584368b45c00aa'}")>
+                                <#if catalog?exists>
+                                <a href="${catalog.url!'javascript:void(0);'}"  class="levelthree">云主机</a>
+                                </#if> 
+                                <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584369eec500ae'}")>
+                                <#if catalog?exists>
+                                <a href="${catalog.url!'javascript:void(0);'}"  class="levelthree">云硬盘</a>
+                                </#if> 
+                                <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436c26ac00bc'}")>
+                                <#if catalog?exists>
+                                <a href="${catalog.url!'javascript:void(0);'}"  class="levelthree">云硬盘快照</a>
+                                </#if> 
+                                <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436cbb8a00c0'}")>
+                                <#if catalog?exists>
+                                <a href="${catalog.url!'javascript:void(0);'}"  class="levelthree">私有网络</a>
+                                </#if>  
+                                <!-- <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436af1bc00b6'}")>
+                                <#if catalog?exists>
+                                <a href="${catalog.url!'javascript:void(0);'}"  class="levelthree">负载均衡</a>
+                                </#if>  --> 
+                                <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436a7d7c00b2'}")>
+                                <#if catalog?exists>
+                                <a href="${catalog.url!'javascript:void(0);'}"  class="levelthree">弹性公网IP</a>
+                                </#if>  
+                                <!-- <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436d49b400c4'}")>
+                                <#if catalog?exists>
+                                <a href="${catalog.url!'javascript:void(0);'}"  class="levelthree">VPN</a>
+                                </#if> -->  
+                                <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436b622b00ba'}")>
+                                <#if catalog?exists>
+                                <a href="${catalog.url!'javascript:void(0);'}" class="levelthree">对象存储</a>
+                                </#if>   
+                            </div>
+                        </li>
+                        <!--渠道与合作--> 
+                        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158435e88410022'}")>
+                        <#if catalog?exists>
+                        <li><span class="level"><a  class="leveltwolink" href="${catalog.url!'javascript:void(0);'}">渠道与合作</a></span>  
+                            </li>
+                        </#if>
+                        <!--帮助中心-->
+                            <li> <span class="level">
+                                <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436fbb0800c9'}")>
+                                <#if catalog?exists>
+                                <a href="${catalog.url!'javascript:void(0);'}"  class="levelthree">
+                                帮助中心
+                                </a>
+                                </#if>
+                                </span>
+                                <div class="childopen">
+                                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436fbb0800c9'}")>
+                                    <#if catalog?exists>
+                                        <a href="${catalog.url!'javascript:void(0);'}"  class="levelthree">文档中心</a>
+                                    </#if>
+                                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843704dee00cd'}")>
+                                    <#if catalog?exists>
+                                        <a href="${catalog.url!'javascript:void(0);'}"  class="levelthree">API 手册</a>
+                                    </#if>
+                                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584370f03900d1'}")>
+                                    <#if catalog?exists>
+                                        <a href="${catalog.url!'javascript:void(0);'}"  class="levelthree">技术分享</a>
+                                    </#if>
+                                </div>
+                            </li>
+
+                        <!--关于我们-->
+                        <li> <span class="level">
+                            <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158437637fc00ea'}")>
+                            <#if catalog?exists> <a  class="leveltwolink" href="${catalog.url!'javascript:void(0);'}" >
+                            关于我们
+                            </a>
+                            </#if>
+                            </span>
+                            <div class="childopen">
+                            <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158437637fc00ea'}")>
+                                    <#if catalog?exists> <a  class="leveltwolink" href="${catalog.url!'javascript:void(0);'}" >公司简介</a> </#if> 
+                             <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158437534f100e2'}")>
+                                    <#if catalog?exists> <a  class="leveltwolink" href="${catalog.url!'javascript:void(0);'}" >资质荣誉</a> </#if> 
+                            <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584377b29b00f2'}")>
+                                    <#if catalog?exists> <a  class="leveltwolink" href="${catalog.url!'javascript:void(0);'}" >新闻动态</a> </#if> 
+                                    
+                             <div class="level_menu"> 
+                                <span class="leveltwo">投资者关系</span>
+                                
+                                    <div class="child_menu">
+                                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584375ba3900e6'}")>
+                                    <#if catalog?exists> <a  class="leveltwolink" href="${catalog.url!'javascript:void(0);'}" >基本信息</a> </#if> 
+                                    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584374bf9600de'}")>
+                                    <#if catalog?exists> <a  class="leveltwolink" href="${catalog.url!'javascript:void(0);'}" >公司公告</a> </#if> 
+                                    </div>
+                           </div>
+                           <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584374273c00da'}")>
+                                    <#if catalog?exists> <a  class="leveltwolink" href="${catalog.url!'javascript:void(0);'}" >联系我们</a> </#if> 
+                            <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584376b0d800ee'}")>
+                                    <#if catalog?exists> <a  class="leveltwolink" href="${catalog.url!'javascript:void(0);'}" >加入我们</a> </#if> 
+                             </div>
+                        </li>
+                    </ul>
+                </div></td>
+            <td align="right" width="255"><div class="bai"><a href="http://console.eayun.cn/#/sys/login" target="_blank">登录</a>
+             <a class="nav_regester" href="http://console.eayun.cn/#/sys/register" target="_blank">立即注册</a></div></td>
+        </tr>
+    </table>
+</div>

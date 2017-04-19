@@ -1,0 +1,1 @@
+alter table sys_selfcustomer add COLUMN cus_type CHAR(1);

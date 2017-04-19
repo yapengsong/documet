@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>易云捷讯-企业云上易云</title>
+<link href="/style/style.css" type="text/css" rel="stylesheet"/>
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+</head>
+
+<body>
+<#include "/wwwroot/yymh/template/common/top.html">
+<div id="bzzx_banner">
+	<#include "/wwwroot/yymh/template/common/header.html">
+    <div class="content_title">
+    	<h4> 帮助中心</h4>
+        <p>文档、手册、帮助、技术指南</p>
+    </div>
+</div>
+<table width="1200" border="0" cellspacing="0" cellpadding="0" class="warp1200">
+  <tr>
+<div class="content_nav">
+    <span class="current"><a href="javascript:void(0)">文档中心</a></span>
+    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843704dee00cd'}")>
+    <#if catalog?exists> 
+        <span><a href="${catalog.url!'javascript:void(0);'}">API手册</a></span>
+    </#if>
+    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584370f03900d1'}")>
+    <#if catalog?exists> 
+        <span><a href="${catalog.url!'javascript:void(0);'}">技术分享</a></span>
+    </#if>
+</div>
+    <td width="940" valign="top">
+ <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+ <div class="content_pic">
+        <a href="http://www.eayun.com/document/product/0000000058f5b9160158fb59c0840141.shtml"><img src="../../../images/bzzx_jpg_05.jpg" style="margin-right:78px;"/></a>
+        <a href="/document/faq/0000000058b45b5c0158b4c18448007c.shtml"><img src="../../../images/bzzx_jpg_07.jpg" style="margin-right:78px;"/></a>
+        <a href="../../../download/Eayun_user.pdf"><img src="../../../images/bzzx_jpg_09.jpg" /></a>
+ </div>
+  <tr>
+    <td valign="top" class="paddingbt80">
+    	<div class="content_list">
+        	<span class="content_list_title">
+        		<img src="../../../images/bzzx_content_15.png" />
+            </span>
+        	<span>计算与存储</span>
+        </div>
+
+        <#assign name ="catalogTag">
+        <#assign catalogTag =newTag("${name}")>
+        <#assign catalog =catalogTag("{'levels':'self','name':'402890e758434aaa0158436fbb0800c9'}")>
+            <#if catalog?exists>   
+                <ul class="list">
+                    <#assign articleTag =newTag("articleTag")>
+                    <#assign articleList =articleTag("{'name':'${catalog.id}',count:'30'}")>
+                    <#if articleList?exists && articleList?size gt 0>
+                        <#list articleList as article>
+                            <#if article.tags = "计算与存储">
+                            	<li>            
+                                    <a href="${article.url!'javascript:void(0);'}">${article.title}</a>
+                    			</li>
+                            </#if>
+                        </#list>
+                    </#if>
+                </ul>
+            </#if>
+    </td>
+    <td valign="top" class="paddingbt80">
+    	<div class="content_list">
+        	<span class="content_list_title">
+        		<img src="../../../images/bzzx_content_17.png" />
+            </span>
+        	<span>网络</span>
+        </div>
+        <#assign name ="catalogTag">
+        <#assign catalogTag =newTag("${name}")>
+        <#assign catalog =catalogTag("{'levels':'self','name':'402890e758434aaa0158436fbb0800c9'}")>
+            <#if catalog?exists>   
+                <ul class="list">
+                    <#assign articleTag =newTag("articleTag")>
+                    <#assign articleList =articleTag("{'name':'${catalog.id}',count:'30'}")>
+                    <#if articleList?exists && articleList?size gt 0>
+                        <#list articleList as article>
+                            <#if article.tags = "网络">
+                                <li>            
+                                    <a href="${article.url!'javascript:void(0);'}">${article.title}</a>
+                                </li>
+                            </#if>
+                        </#list>
+                    </#if>
+                </ul>
+            </#if>
+    </td>
+    <td valign="top" class="paddingbt80">
+    	<div class="content_list">
+        	<span class="content_list_title">
+        		<img src="../../../images/bzzx_content_19.png" />
+            </span>
+        	<span>云监控</span>
+        </div>
+        <#assign name ="catalogTag">
+        <#assign catalogTag =newTag("${name}")>
+        <#assign catalog =catalogTag("{'levels':'self','name':'402890e758434aaa0158436fbb0800c9'}")>
+            <#if catalog?exists>   
+                <ul class="list">
+                    <#assign articleTag =newTag("articleTag")>
+                    <#assign articleList =articleTag("{'name':'${catalog.id}',count:'30'}")>
+                    <#if articleList?exists && articleList?size gt 0>
+                        <#list articleList as article>
+                            <#if article.tags = "云监控">
+                                <li>            
+                                    <a href="${article.url!'javascript:void(0);'}">${article.title}</a>
+                                </li>
+                            </#if>
+                        </#list>
+                    </#if>
+                </ul>
+            </#if>
+    </td>
+    <td valign="top" class="paddingbt80">
+    	<div class="content_list">
+        	<span class="content_list_title">
+        		<img src="../../../images/bzzx_content_22.png" />
+            </span>
+        	<span>安全与防护</span>
+        </div>
+        <#assign name ="catalogTag">
+        <#assign catalogTag =newTag("${name}")>
+        <#assign catalog =catalogTag("{'levels':'self','name':'402890e758434aaa0158436fbb0800c9'}")>
+            <#if catalog?exists>   
+                <ul class="list">
+                    <#assign articleTag =newTag("articleTag")>
+                    <#assign articleList =articleTag("{'name':'${catalog.id}',count:'30'}")>
+                    <#if articleList?exists && articleList?size gt 0>
+                        <#list articleList as article>
+                            <#if article.tags = "安全与防护">
+                                <li>            
+                                    <a href="${article.url!'javascript:void(0);'}">${article.title}</a>
+                                </li>
+                            </#if>
+                        </#list>
+                    </#if>
+                </ul>
+            </#if>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" class="paddingbt80">
+    	<div class="content_list">
+        	<span class="content_list_title">
+        		<img src="../../../images/bzzx_content_32.png" />
+            </span>
+        	<span>管理</span>
+        </div>
+        <#assign name ="catalogTag">
+        <#assign catalogTag =newTag("${name}")>
+        <#assign catalog =catalogTag("{'levels':'self','name':'402890e758434aaa0158436fbb0800c9'}")>
+            <#if catalog?exists>   
+                <ul class="list">
+                    <#assign articleTag =newTag("articleTag")>
+                    <#assign articleList =articleTag("{'name':'${catalog.id}',count:'30'}")>
+                    <#if articleList?exists && articleList?size gt 0>
+                        <#list articleList as article>
+                            <#if article.tags = "管理">
+                                <li>            
+                                    <a href="${article.url!'javascript:void(0);'}">${article.title}</a>
+                                </li>
+                            </#if>
+                        </#list>
+                    </#if>
+                </ul>
+            </#if>
+    </td>
+    <td valign="top" class="paddingbt80">
+    	<div class="content_list">
+        	<span class="content_list_title">
+        		<img src="../../../images/bzzx_content_34.png" />
+            </span>
+        	<span>购买与计费</span>
+        </div>
+        <#assign name ="catalogTag">
+        <#assign catalogTag =newTag("${name}")>
+        <#assign catalog =catalogTag("{'levels':'self','name':'402890e758434aaa0158436fbb0800c9'}")>
+            <#if catalog?exists>   
+                <ul class="list">
+                    <#assign articleTag =newTag("articleTag")>
+                    <#assign articleList =articleTag("{'name':'${catalog.id}',count:'30'}")>
+                    <#if articleList?exists && articleList?size gt 0>
+                        <#list articleList as article>
+                            <#if article.tags = "购买与计费">
+                                <li>            
+                                    <a href="${article.url!'javascript:void(0);'}">${article.title}</a>
+                                </li>
+                            </#if>
+                        </#list>
+                    </#if>
+                </ul>
+            </#if>
+    </td>
+    <td valign="top" class="paddingbt80">
+    	<div class="content_list">
+        	<span class="content_list_title">
+        		<img src="../../../images/bzzx_content_29.png" />
+            </span>
+        	<span>账号与权限</span>
+        </div>
+        <#assign name ="catalogTag">
+        <#assign catalogTag =newTag("${name}")>
+        <#assign catalog =catalogTag("{'levels':'self','name':'402890e758434aaa0158436fbb0800c9'}")>
+            <#if catalog?exists>   
+                <ul class="list">
+                    <#assign articleTag =newTag("articleTag")>
+                    <#assign articleList =articleTag("{'name':'${catalog.id}',count:'30'}")>
+                    <#if articleList?exists && articleList?size gt 0>
+                        <#list articleList as article>
+                            <#if article.tags = "账号与权限">
+                                <li>            
+                                    <a href="${article.url!'javascript:void(0);'}">${article.title}</a>
+                                </li>
+                            </#if>
+                        </#list>
+                    </#if>
+                </ul>
+            </#if>
+    </td>
+    <td valign="top" class="paddingbt80">
+    	<div class="content_list">
+        	<span class="content_list_title">
+        		<img src="../../../images/bzzx_content_36.png" />
+            </span>
+        	<span>服务协议</span>
+        </div>
+        <#assign name ="catalogTag">
+        <#assign catalogTag =newTag("${name}")>
+        <#assign catalog =catalogTag("{'levels':'self','name':'402890e758434aaa0158436fbb0800c9'}")>
+            <#if catalog?exists>   
+                <ul class="list">
+                    <#assign articleTag =newTag("articleTag")>
+                    <#assign articleList =articleTag("{'name':'${catalog.id}',count:'30'}")>
+                    <#if articleList?exists && articleList?size gt 0>
+                        <#list articleList as article>
+                            <#if article.tags = "服务协议">
+                                <li>            
+                                    <a href="${article.url!'javascript:void(0);'}">${article.title}</a>
+                                </li>
+                            </#if>
+                        </#list>
+                    </#if>
+                </ul>
+            </#if>
+    </td>
+  </tr>
+</table>
+ </td>
+  </tr>
+</table>
+<#include "/wwwroot/${sitePath}/template/common/foot_content.html">
+<script type="text/javascript" src="/script/jquery.min.js"></script>
+<script type="text/javascript" src="/script/header.js"></script> 
+
+</body>
+</html>

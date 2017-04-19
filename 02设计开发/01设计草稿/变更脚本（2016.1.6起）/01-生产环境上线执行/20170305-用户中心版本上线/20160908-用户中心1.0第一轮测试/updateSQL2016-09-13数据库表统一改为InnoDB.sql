@@ -1,0 +1,12 @@
+alter table cloud_model engine=innodb;
+alter table cloud_outip engine=innodb;
+alter table cus_service_state engine=innodb;
+alter table obs_accesskey engine=innodb;
+alter table obs_user engine=innodb;
+-- alter table order_resource engine=innodb;本次新增
+alter table sys_eayunfile engine=innodb;
+alter table sys_mailverify engine=innodb;
+alter table sys_no_send_sms engine=innodb;
+alter table sys_phoneverify engine=innodb;
+alter table work_file engine=innodb;
+alter table work_quota engine=innodb;

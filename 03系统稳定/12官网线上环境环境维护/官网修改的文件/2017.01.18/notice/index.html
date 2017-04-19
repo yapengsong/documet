@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" xmlns="http://www.w3.org/1999/html"/>
+<title>易云捷讯-企业云上易云</title>
+<link href="/style/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+<#include "/wwwroot/yymh/template/common/top.html">
+<#include "/wwwroot/yymh/template/common/header_content.html">
+ 
+
+<table width="1200" border="0" cellspacing="0" cellpadding="0" class="warp1200">
+  <tr>
+
+    <td width="960" valign="top">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>         
+                <#assign name ="catalogTag">
+				<#assign catalogTag =newTag("${name}")>
+				<#assign catalog =catalogTag("{'levels':'self','name':'0000000059674ba00159af5c0fcc0022'}")>
+					<#if catalog?exists>
+						<ul class="contentH">
+							<#assign articleTag =newTag("articleTag")>
+							<#assign articleList =articleTag("{'name':'${catalog.id}',count:'10','page':true,'pagesize':'10','pageindex':'${pageindexF}'}")>
+							<#if articleList?exists && articleList?size gt 0>
+								<#list articleList as article>
+								<li  class="news">
+                                	 <table>
+
+                                        <td>
+                                            <h4 class="news_title">${article.title}</h4>
+                                        </td>
+                                    </table>
+								</li>
+								</#list>
+							</#if>
+						</ul>
+				</#if>
+          </td>
+        </tr>
+      </table>
+      <table height="43" cellspacing="0" cellpadding="4" width="100%" align="center"  border="0" style="margin-bottom:80px; margin-top:40px">
+        <tbody>
+          <tr>
+            <td align="left" height="50">
+                ${pagebar}
+            </td>
+          </tr>
+        </tbody>
+    </table></td>
+  </tr>
+</table>
+<script type="text/javascript" src="/script/jquery.min.js"></script>
+<script type="text/javascript" src="/script/left_menu.js"></script>
+<script type="text/javascript" src="/script/header.js"></script>
+<script>
+  $(document).ready(function(e) {
+    	var markHtml = $(".news_mark").html();
+    	if ( markHtml == "易云"){
+    		$(this).removeClass("news_mark").addClass("news_mark_blue");
+    	}
+  });
+</script>
+</body>
+</html>

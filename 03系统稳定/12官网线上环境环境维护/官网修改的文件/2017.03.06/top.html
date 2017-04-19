@@ -1,0 +1,22 @@
+
+
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+<div class="topbg">
+    <div class="topbg_inner"> 
+    	<span align="left">股票代码: 836286&nbsp;&nbsp;&nbsp;&nbsp;股票简称: 易云股份</span>
+        <table border="0" align="right" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                	<#assign catalog=catalogTag("{'levels':'self','name':'000000005961c797015a8dfc68d600ef'}")>
+                    <#if catalog?exists>
+                    	<a  class="beian" href="${catalog.url!'javascript:void(0);'}">备案</a>
+                    </#if> 
+                </td>
+                <td class="top-line">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><a class="console" href="http://console.eayun.cn" target="_blank">管理控制台</a></td>
+            </tr>
+        </table>
+        <div class="claer"></div>
+    </div>
+</div>

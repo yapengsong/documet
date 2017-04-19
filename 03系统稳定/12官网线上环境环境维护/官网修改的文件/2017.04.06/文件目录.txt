@@ -1,0 +1,3 @@
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/script/jquery.jslides.js
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/style/style.css
+usr/local/apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/index.html

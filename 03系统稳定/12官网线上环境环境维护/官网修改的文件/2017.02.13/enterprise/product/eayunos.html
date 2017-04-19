@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link href="/style/style.css" rel="stylesheet" type="text/css">
+<title>易云捷讯-企业云上易云</title>
+</head>
+
+<body>
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+<div class="syy_banner syy_banner1"> <#include "/wwwroot/${sitePath}/template/common/header_syy.html">
+    <h3>产品与服务</h3>
+</div>
+<div class="syy_product_nav"> <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158435c86180018'}")>
+    <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}"><span class="syy_os current">EayunOS</span></a> </#if>
+    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158435cede2001a'}")>
+    <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}"><span class="syy_stack">EayunStack</span></a> </#if>
+    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158435d5636001c'}")>
+    <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}"><span class="syy_cloud">EayunCloud</span></a> </#if> </div>
+<table border="0" cellspacing="0" cellpadding="0" class="warp1200">
+    <tr>
+        <td valign="top"><table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <h5 class="syy_content_list">简介</h5>
+                    <p class="syy_infor">EayunOS是易云自主研发的企业级服务器虚拟化产品，可用于构建灵活、安全、高度可扩展的企业服务器虚拟化管理平台。EayunOS基于内核虚拟化（KVM）技术构建，适用于各种规模/类型的私有云部署场景，在降低成本的同时，有出色的性能、效率、可靠性和灵活性。 </p>
+                    <p class="syy_infor">EayunOS 企业虚拟化平台是适用于服务器虚拟化的完整解决方案。是企业建立自己的服务器虚拟化集群和云平台的基础架构选择, 通过EayunOS虚拟化产品, 可以将企业的一台或多台服务器虚拟为几十、几百甚至几千台虚拟服务器，同时提供便捷的管理、可靠的业务保证、弹性的业务扩展。通过EayunOS企业虚拟化平台，可以大幅降低企业IT架构成本，提升运营效率，提升业务可靠性保证，充分利用云计算带来的便利和好处，为企业创新发展提供坚实的IT基础架构保障。</p>
+                </tr>
+            </table>
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <h5 class="syy_content_list">优势</h5>
+                </tr>
+            </table>
+            <div>
+                <TABLE style="MARGIN-LEFT: 40px" cellSpacing=0 cellPadding=0 border=0>
+                    <TBODY>
+                        <TR>
+                            <TD class=paddingbt40 vAlign=top width=220><DIV class=pic_h1><IMG src="../../../images/eayunos_10.jpg" width=88 height=81></DIV>
+                                <DIV class=pictitle_h1>成熟稳定</DIV>
+                                <DIV class=piccon_h1>私有云部署的理想之选，国內领先成熟的企业级虚拟化产品。</DIV></TD>
+                            <TD class=paddingbt40 vAlign=top width=260>&nbsp;</TD>
+                            <TD class=paddingbt40 vAlign=top width=220><DIV class=pic_h1><IMG src="../../../images/eayunos_13.jpg" width=76 height=76></DIV>
+                                <DIV class=pictitle_h1>管理功能多样化</DIV>
+                                <DIV class=piccon_h1>提供企业级管理功能，包括实时迁移、高可用性、集群的负载平衡、节能策略、配额、网络与存储的 QoS 控制。</DIV></TD>
+                            <TD class=paddingbt40 vAlign=top width=260>&nbsp;</TD>
+                            <TD class=paddingbt40 vAlign=top><DIV class=pic_h1><IMG src="../../../images/eayunos_07.jpg" width=92 height=91></DIV>
+                                <DIV class=pictitle_h1>优化分配</DIV>
+                                <DIV class=piccon_h1>
+                                    <P>提供历史报表数据展现，让管理者掌握资源的使用趋势，从而优化资源分配。<BR>
+                                    </P>
+                                    <P></P>
+                                </DIV></TD>
+                        </TR>
+                        <TR>
+                            <TD vAlign=top><DIV class=pic_h1><IMG src="../../../images/eayunos_19.jpg" width=91 height=93></DIV>
+                                <DIV class=pictitle_h1>节约成本</DIV>
+                                <DIV class=piccon_h1>支持 gluster 分布式集群文件系统，让 EayunOS 管理的集群既可作为计算资源，又可作为存储资源，降低成本的同时，大大提高了利用率和灵活性。</DIV></TD>
+                            <TD vAlign=top>&nbsp;</TD>
+                            <TD vAlign=top><DIV class=pic_h1><IMG src="../../../images/eayunos_22.jpg" width=104 height=86></DIV>
+                                <DIV class=pictitle_h1>易于操作</DIV>
+                                <DIV class=piccon_h1>可原生支持使用 OpenStack 提供的一部分功能，如镜像服务，网络服务等。</DIV></TD>
+                            <TD vAlign=top>&nbsp;</TD>
+                            <TD>&nbsp;</TD>
+                        </TR>
+                    </TBODY>
+                </TABLE>
+            </div>
+            <div class="paddingbt40">
+                <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <h5 class="syy_content_list">文档下载</h5>
+                    </tr>
+                    <p class="syy_download"> <a href="../../../download/EayunOS4.2product.pdf">EayunOS4.2&nbsp;产品白皮书</a> </p class="syy_download">
+                    <p class="syy_download"> <a href="../../../download/EayunOS4.2technology.pdf">EayunOS4.2&nbsp;技术白皮书</a> </p>
+                    <p class="syy_download"> <a href="../../../download/EayunOS4.2user.pdf">EayunOS4.2&nbsp;用户手册</a> </p>
+                </table>
+            </div></td>
+    </tr>
+</table>
+<#include "/wwwroot/${sitePath}/template/common/foot_syy.html"> 
+</body>
+</html>

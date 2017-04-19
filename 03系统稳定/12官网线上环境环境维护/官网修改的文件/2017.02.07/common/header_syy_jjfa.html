@@ -1,0 +1,17 @@
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+<div class="syy_content_nav">
+    <div class="wrapper"> <#assign catalog=catalogTag("{'levels':'self','name':'402890e758aee6e50158aefb7c520016'}")>
+        <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}">企业私有云</a> </#if> <span >/</span>
+        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158435c86180018'}")>
+        <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}">产品与服务</a> </#if> <span >/</span>
+        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa015843595e5c000e'}")>
+        <#if catalog?exists> <a  class="current" href="${catalog.url!'javascript:void(0);'}">解决方案</a> </#if> <span >/</span>
+        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584355048f0004'}")>
+        <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}">渠道与合作</a> </#if>
+        
+        <span >/</span>
+        <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584355eeb70008'}")>
+        <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}">联系我们</a> </#if>
+   </div>
+</div>

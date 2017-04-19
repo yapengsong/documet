@@ -1,0 +1,13 @@
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/about/announcement.html
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/about/contact.htm
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/about/dynamic/eayun.html
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/about/dynamic/index.html
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/about/dynamic/news_detail.html
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/about/dynamic/report.html
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/about/honor.html
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/about/information.html
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/about/intro.html
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/about/join.html
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/common/news_left.html
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/index.html
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/product/eos.html

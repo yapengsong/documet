@@ -1,0 +1,78 @@
+@charset "utf-8";
+/********************************************************
+	copyright: www.owjee.com
+	filename: frame.css
+	revision: 1.0
+	createdate: 2010-10-03
+	author: lovebslq
+	description:整个系首页框架布局
+********************************************************/
+/*公用样式1"Microsoft Yahei","冬青黑体简体中文 w3","黑体"
+----------------------------------------------------------------------------------------------------*/
+body{font: 14px "Microsoft Yahei","冬青黑体简体中文 w3","黑体","宋体", Verdana, Tahoma, Lucida Grande, Arial, sans-serif; width:100%; margin:0 auto;  color:#333; overflow-x: hidden; background:#f9799b;}
+.hellokitty{width:440px; margin:0 auto; }
+header{width:440px; height:340px; margin:0 auto; position: relative; z-index: 10;}
+header .tou{width:320px; height:260px; border:#2f2d20 solid 15px; border-radius:45%; background:#fdfcf8; position: absolute; top:40px; left:45px;-moz-box-shadow:inset -9px -18px 75px #ccc;-webkit-box-shadow:inset -9px -18px 75px #ccc;box-shadow:inset -9px -18px 75px #ccc;}
+header .earLeft{width:90px; height:150px; position: absolute; left:30px; top:10px;border:#2f2d20 solid 15px; border-radius:50%; border-bottom:0; background:#fdfcf8; transform: rotate(327deg);-webkit-transform: rotate(327deg);-moz-transform: rotate(327deg);-o-transform: rotate(327deg);-ms-transform: rotate(327deg) ;}
+header .earRight{width:90px; height:150px; position: absolute; right:30px; top:10px;border:#2f2d20 solid 15px; border-radius:50%; border-bottom:0; background:#fdfcf8; transform: rotate(33deg) ;-webkit-transform: rotate(33deg) ;-moz-transform: rotate(33deg) ;-o-transform: rotate(33deg) ;-ms-transform: rotate(33deg) ;}
+
+header .eyeLeft{width:24px; height:30px; border-radius:50%; position: absolute; left:116px; top:204px; background:#2F2D20;}
+header .eyeRight{width:24px; height:30px; border-radius:50%; position: absolute; right:116px; top:204px; background:#2F2D20;}
+header .mouth{width:28px; height:15px; border-radius:50%; position: absolute; left:200px; top:244px; background:#fede2b; border:#2f2d20 solid 6px; border-left-width:3px;  border-right-width:3px; border-radius:50%;}
+header .blusherLeft{width:40px; height:30px; border-radius:50%; position: absolute; left:116px; top:244px; background:#f79191; box-shadow: 0 0 10px #f79191;}
+header .blusherRight{width:40px; height:30px; border-radius:50%; position: absolute; right:116px; top:244px; background:#f79191; box-shadow: 0 0 10px #f79191;}
+
+
+header .flower{width:180px; height:108px; position: absolute; right:30px; top:40px; transform: rotate(33deg) ;-webkit-transform: rotate(33deg) ;-moz-transform: rotate(33deg) ;-o-transform: rotate(33deg) ;-ms-transform: rotate(33deg) ;}
+header .flower .middle{background:#ce1a47; border:9px solid #2F2D20; width: 100px; height:24px; position:absolute; border-radius:40px; left:50%; top:50%; top:50%; margin-left:-59px; margin-top:-21px;}
+header .flower .center{background:#ce1a47; border:9px solid #2F2D20; width: 55px; height:55px; position:absolute; border-radius: 50%; left:50%; top:50%; top:50%; margin-left:-36px; margin-top:-36px;  background:-webkit-gradient(radial, 165 0, 0, 220 -146, 465, from(#dc3a62), to(#ce1a47)); }
+header .flower .outerLeft{width:70px; height:86px; position:absolute; border-radius:50%; position: absolute; left:0; top:2px; border:#2f2d20 solid 9px; background:#ce1a47; background:-webkit-gradient(radial, 165 0, 0, 220 -146, 465, from(#dc3a62), to(#ce1a47)); }
+header .flower .outerRight{width:75px; height:80px; position:absolute; border-radius:50%; position: absolute; right:0; top:5px; border:#2f2d20 solid 9px; background:#ce1a47; background:-webkit-gradient(radial, 165 0, 0, 220 -146, 465, from(#dc3a62), to(#ce1a47)); }
+
+header .mustache{width:90px; border-top:#2f2d20 6px solid; height:10px; background:transparent; overflow:hidden; border-radius: 50%; position: absolute;}
+header .mustacheLeft1{left: 0; top:190px; transform: rotate(350deg);-webkit-transform: rotate(350deg);-moz-transform: rotate(350deg);-o-transform: rotate(350deg);-ms-transform: rotate(350deg) ;}
+header .mustacheLeft2{left: 10px; top:220px; transform: rotate(348deg) ;-webkit-transform: rotate(348deg) ;-moz-transform: rotate(348deg) ;-o-transform: rotate(348deg) ;-ms-transform: rotate(348deg) ;}
+header .mustacheLeft3{left: 20px; top:260px; transform: rotate(348deg) ;-webkit-transform: rotate(348deg) ;-moz-transform: rotate(348deg) ;-o-transform: rotate(348deg) ;-ms-transform: rotate(348deg) ;}
+
+header .mustacheRight1{right: 0; top:190px; transform: rotate(10deg);-webkit-transform: rotate(10deg);-moz-transform: rotate(10deg);-o-transform: rotate(10deg);-ms-transform: rotate(10deg) ;}
+header .mustacheRight2{right: 10px; top:220px; transform: rotate(12deg) ;-webkit-transform: rotate(12deg) ;-moz-transform: rotate(12deg) ;-o-transform: rotate(12deg) ;-ms-transform: rotate(12deg) ;}
+header .mustacheRight3{right: 20px; top:260px; transform: rotate(12deg) ;-webkit-transform: rotate(12deg) ;-moz-transform: rotate(12deg) ;-o-transform: rotate(12deg) ;-ms-transform: rotate(12deg) ;}
+
+header .fingerBoxLeft{width:60px; height:30px; overflow:hidden; position: absolute; left:40px; bottom:58px;  transform: rotate(20deg); -webkit-transform: rotate(20deg);-moz-transform: rotate(20deg);-o-transform: rotate(20deg);-ms-transform: rotate(20deg);}
+header .fingerBoxLeft .finger{width:30px; height:40px; border:#2f2d20 solid 15px; border-top-left-radius:50%;  border-top-right-radius:50%; border-radius:50%; background:#fdfcf8;}
+header .fingerBoxRight{width:60px; height:30px; overflow:hidden; position: absolute; right:40px; bottom:58px;  transform: rotate(340deg); -webkit-transform: rotate(340deg);-moz-transform: rotate(340deg);-o-transform: rotate(340deg);-ms-transform: rotate(340deg);}
+header .fingerBoxRight .finger{width:30px; height:40px; border:#2f2d20 solid 15px; border-top-left-radius:50%;  border-top-right-radius:50%; border-radius:50%; background:#fdfcf8;}
+
+.centerBox{width:400px; height:360px; position: relative; margin:-40px auto;}
+.centerBox .handLeft{width:70px; height:150px; padding-top:40px; position: absolute; left:35px; top:-65px; background:#fdfcf8; border-radius:45%; border:#2f2d20 solid 15px;  transform: rotate(130deg);-webkit-transform: rotate(130deg);-moz-transform: rotate(130deg);-o-transform: rotate(130deg);-ms-transform: rotate(130deg); overflow:hidden;}
+.centerBox .arm{height:180px;  height:15px;  margin:18px 0; background:#664ea6;}
+.centerBox .arm.black{border-bottom:15px solid #2F2D20}
+.centerBox .handRight{width:70px; height:150px; padding-top:40px; position: absolute; right:35px; top:-65px; background:#fdfcf8; border-radius:45%; border:#2f2d20 solid 15px; transform: rotate(230deg);-webkit-transform: rotate(230deg);-moz-transform: rotate(230deg);-o-transform: rotate(230deg);-ms-transform: rotate(230deg); overflow:hidden;}
+
+.centerBox .corpBox{height:180px; position:relative; overflow:hidden;}
+.centerBox .corp{width:260px; height:400px; overflow:hidden; position: absolute; left:50%; margin-left:-145px; top:-10px; background:#3e88a3; border-top-left-radius:50%; border-top-right-radius:50%; border:#2f2d20 solid 15px; background:-webkit-gradient(radial, 165 0, 0, 220 -146, 465, from(#63b4d2), to(#3e88a3))}
+.centerBox .corp .flower{width:120px; height:120px; margin:60px auto; position: relative;}
+.centerBox .corp .flower .petal{width:45px; height:70px; background:#ce1a47; position: absolute; border-top-left-radius: 50%; border-top-right-radius: 50%;}
+.centerBox .corp .flower .petal1{top:0; left:37px;}
+.centerBox .corp .flower .petal2{right:15px; top:20px; transform: rotate(72deg);-webkit-transform: rotate(72deg);-moz-transform: rotate(72deg);-o-transform: rotate(72deg);-ms-transform: rotate(72deg);}
+.centerBox .corp .flower .petal3{right:20px; top:44px; transform: rotate(144deg);-webkit-transform: rotate(144deg);-moz-transform: rotate(144deg);-o-transform: rotate(144deg);-ms-transform: rotate(144deg);}
+.centerBox .corp .flower .petal4{left:20px; top:44px; transform: rotate(216deg);-webkit-transform: rotate(216deg);-moz-transform: rotate(216deg);-o-transform: rotate(216deg);-ms-transform: rotate(216deg);}
+.centerBox .corp .flower .petal5{left:15px; top:20px; transform: rotate(288deg);-webkit-transform: rotate(288deg);-moz-transform: rotate(288deg);-o-transform: rotate(288deg);-ms-transform: rotate(288deg);}
+.centerBox .corp .flower .center{width:40px; height:40px; background:#664ea6; border-radius:50%; position: absolute; top:40px; left:40px;}
+
+.centerBox .foot{width:290px; position: absolute; left:50%; margin-left:-145px; top:180px; background:#f9799b;}
+.centerBox .foot .footLeft{width:115px; height:70px; border:#2f2d20 solid 15px; border-bottom-left-radius: 50%;  border-bottom-right-radius:40px; position: absolute; background:#fdfcf8; top:0; left:1px; box-shadow: 0 2px 2px #000;  z-index: 2;}
+.centerBox .foot .footRight{width:115px; height:70px; border:#2f2d20 solid 15px; border-bottom-right-radius: 50%; border-bottom-left-radius:40px; position: absolute; background:#fdfcf8; top:0; right:1px; box-shadow: 0 2px 2px #000;  z-index: 2;}
+.centerBox .floor{width:400px; height:100px; margin:0 auto; background:none;  position: absolute; bottom:55px; left:0px; border-radius: 50%;  border-bottom:#c0506e solid 1px;  border-top:#fea4bc solid 1px; z-index: 1;}
+.centerBox .floorh{width:400px; height:70px; margin:0 auto; background:none;  position: absolute; bottom:35px; left:0px; border-left:#f47697 solid 1px; border-right:#f47697 solid 1px; border-bottom-left-radius:50%;  border-bottom-right-radius:50%;  box-shadow: 0 20px 20px #530016; z-index: 1; border-top:0;}
+
+.word{    
+	font-size:60px;
+    color: transparent; 
+    text-stroke: 2px blue; 
+    -moz-text-stroke: 2px blue; 
+    -webkit-text-stroke: 2px blue; 
+    -ms-text-stroke: 2px blue; 
+	text-align:center;  
+	margin-top:40px; 
+}

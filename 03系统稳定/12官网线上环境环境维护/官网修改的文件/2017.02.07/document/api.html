@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>易云捷讯-企业云上易云</title>
+<link href="/style/style.css" type="text/css" rel="stylesheet"/>
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+</head>
+
+<body>
+<#include "/wwwroot/yymh/template/common/top.html">
+<div id="bzzx_banner">
+	<#include "/wwwroot/yymh/template/common/header.html">
+    <div class="content_title">
+    	<h4>帮助中心</h4>
+        <p>文档、手册、帮助、技术指南</p>
+    </div>
+</div>
+<table width="1200" border="0" cellspacing="0" cellpadding="0" class="warp1200">
+  <tr>
+<div class="content_nav">
+	<#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436fbb0800c9'}")>
+    <#if catalog?exists> 
+        <span><a href="${catalog.url!'javascript:void(0);'}">文档中心</a></span>
+    </#if>
+        <span class="current"><a href="javascript:void(0)">API手册</a></span>
+    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584370f03900d1'}")>
+    <#if catalog?exists> 
+        <span><a href="${catalog.url!'javascript:void(0);'}">技术分享</a></span>
+    </#if>
+</div>
+    <td width="940" valign="top">
+ <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top" class="paddingbt80">
+        <h4 class="jishu_title">API手册</h4>
+        <div class="jishu_list contentH2">
+        	
+            <a href="/document/api/0000000058f5b9160158f777112d0071.shtml">对象存储API服务文档</a>
+							
+        </div>
+    </td>
+  </tr>
+</table>
+ </td>
+  </tr>
+</table>
+<#include "/wwwroot/${sitePath}/template/common/foot_content.html">
+<script type="text/javascript" src="/script/jquery.min.js"></script>
+<script type="text/javascript" src="/script/header.js"></script> 
+
+</body>
+</html>

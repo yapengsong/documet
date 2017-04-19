@@ -1,0 +1,8 @@
+/*
+-- Query: SELECT * FROM ecmc01.ecmc_sys_authority
+LIMIT 0, 1000
+
+-- Date: 2017-03-31 10:42
+*/
+INSERT INTO `ecmc_sys_authority` (`id`,`name`,`description`,`createtime`,`createdby`,`enableflag`,`permission`,`menu_id`,`lock`) VALUES ('402890ba5aae0d0c015aae36bad90000','配置文件管理_通用操作','配置文件管理_通用操作','2017-03-08 21:58:26','2c91808256f81c44015702bbf9510000','1','ui:rds_config_base;\nhttp:/ecmc/rds/config/ecmcListDefaultConfigFile.do;\nhttp:/ecmc/rds/config/getAllDatabaseVersion.do;\nhttp:/ecmc/rds/config/queryConfigParamsByGroupId.do;\nhttp:/ecmc/rds/config/updateDefaultConfigFile.do;\nhttp:/ecmc/rds/config/ecmcListCusConfigFile.do;\nhttp:/ecmc/rds/config/queryConfigurationGroupInstances.do;\nhttp:/ecmc/rds/config/updateCusConfigFile.do;\nhttp:/ecmc/rds/config/queryProjectInformationsByDatacenter.do;\nhttp:/ecmc/rds/config/queryConfigFileForPage.do;\nhttp:/ecmc/rds/config/createCusConfigFile.do;\nhttp:/ecmc/rds/config/queryCusSelfConfigFileByFilename.do;\nhttp:/ecmc/rds/config/existConfigFile.do;','2c9082715a83f280015a83f90e690000','0');
+INSERT INTO `ecmc_sys_authority` (`id`,`name`,`description`,`createtime`,`createdby`,`enableflag`,`permission`,`menu_id`,`lock`) VALUES ('402890ba5ac70011015ac707ae550000','配置文件管理_删除配置文件(只限管理员)','配置文件管理_删除配置文件(只限管理员)','2017-03-13 17:37:33','2c91808256f81c44015702bbf9510000','1','ui:rds_config_delete;\nhttp:/ecmc/rds/config/deleteCusConfigFile.do;','2c9082715a83f280015a83f90e690000','0');

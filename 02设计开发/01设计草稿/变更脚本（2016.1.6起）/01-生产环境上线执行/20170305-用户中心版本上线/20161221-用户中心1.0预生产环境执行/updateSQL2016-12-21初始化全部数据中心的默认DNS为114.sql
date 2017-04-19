@@ -1,0 +1,1 @@
+UPDATE dc_datacenter SET dc_dns = '114.114.114.114';

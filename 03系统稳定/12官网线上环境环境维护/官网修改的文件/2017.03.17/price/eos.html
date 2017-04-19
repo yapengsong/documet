@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>易云捷讯-企业云上易云</title>
+<link href="/style/style.css" type="text/css" rel="stylesheet"/>
+
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+</head>
+
+<body>
+<#include "/wwwroot/yymh/template/common/top.html">
+<#include "/wwwroot/yymh/template/common/header.html"> 
+
+
+<table width="1200" border="0" cellspacing="0" cellpadding="0" class="warp1200 paddingbt20">
+	<tr>
+    	<td>
+		<h2 class="jiage_title">产品价格</h2>
+        </td>
+    </tr>
+    <tr>
+        <td width="212" valign="top" class="jiage_nav">
+			<ul>
+				<#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584368b45c00aa'}")>
+					<#if catalog?exists>
+						<li><span><a class="yzj_left" href="${catalog.url!'javascript:void(0);'}">云主机</a></span></li>
+					</#if>
+					<#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa01584369eec500ae'}")>
+					<#if catalog?exists>
+						<li><span><a class="yyp_left" href="${catalog.url!'javascript:void(0);'}">云硬盘</a></span></li>
+					</#if>
+					<#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436c26ac00bc'}")>
+					<#if catalog?exists>
+						<li><span><a class="yypkz_left" href="${catalog.url!'javascript:void(0);'}">云硬盘快照</a></span></li>
+					</#if>
+					<#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436cbb8a00c0'}")>
+					<#if catalog?exists>
+						<li><span><a class="sywl_left" href="${catalog.url!'javascript:void(0);'}">私有网络</a></span></li>
+					</#if>
+					<!-- <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436af1bc00b6'}")>
+					<#if catalog?exists>
+						<li><span><a class="fzjh_left" href="${catalog.url!'javascript:void(0);'}">负载均衡</a></span></li>
+					</#if> -->
+					<#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436a7d7c00b2'}")>
+					<#if catalog?exists>
+						<li><span><a class="txgw_left" href="${catalog.url!'javascript:void(0);'}">弹性公网IP</a></span></li>
+					</#if>
+					<!-- <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436d49b400c4'}")>
+					<#if catalog?exists>
+						<li><span><a class="vpn_left" href="${catalog.url!'javascript:void(0);'}">VPN</a></span></li>
+					</#if> -->
+					<#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158436b622b00ba'}")>
+					<#if catalog?exists>
+						<li class="current"><span><a class="dxcc_left" href="${catalog.url!'javascript:void(0);'}">对象存储</a></span></li>
+					</#if>
+			</ul>
+		</td>
+        <td width="676" valign="top" class="jiage_content">
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            	<div class="jiage_top">
+                	<div class="jiage_top_title">
+                		<span class="biaoti1">对象存储</span>
+                		<span class="jiage_price">￥<span class="sum">0</span></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="jiage_top_button clearfix">
+                        <button type="button" class="cancel">取消更改</button>
+                        <button type="button" class="save">保存</button>
+                        <button type="button" class="last_button view">加入预览</button>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="jiage_xinxi">
+                    <h4>配置信息</h4>
+                    <ul>
+                    	<li class="data_centerEos">
+                        	<span class="jiage_label">数据中心:</span>
+                        </li>
+                    	<li class="paddinglf30">
+                            <span class="jiage_label">存储空间:</span>
+                        	<div class="dxcc_select">
+                            <span></span>
+                                <input type="text" value="1" class="dxcc_input1 space" id="space"/><select class="dxcc_select1 spaceSelect">
+                                    <option>GB</option>
+                                    <option>TB</option>
+                                </select>
+                                <label class="dxcc_select_unit">/月</label>
+                            </div>
+                            <span class="dxcc_info">（预估月均存储空间总量）</span>
+                        </li>
+                    	<li class="paddinglf30">
+                            <span class="jiage_label">下行流量:</span>
+                        	<div class="dxcc_select">
+                                <span></span>
+                                <input type="text" value="1" class="dxcc_input1 flow" id="flow"/><select  class="dxcc_select1 flowSelect">
+                                    <option>GB</option>
+                                    <option>TB</option>
+                                </select>
+                                <label class="dxcc_select_unit">/月</label>
+                            </div>
+                            <span  class="dxcc_info">（预估月均下行流量）</span>
+                        </li>
+                    	<li class="paddinglf30">
+                            <span class="jiage_label">请求次数:</span>
+                            <div class="dxcc_request">
+                                <input class="dxcc_input1 request" max="10000000" min="0"/>  
+                                <span class="dxcc_unit">万次/月&nbsp;&nbsp;</span>
+                            </div>
+                            <span class="dxcc_info">（预估月均请求次数）</span>
+                        </li>
+                    	<!-- <li class="paddinglf30">
+                            <span class="jiage_label">CDN下载流量:</span>
+                        	<div class="dxcc_select">
+                                <span></span>
+                                <input type="text" class="dxcc_input1 download"/><select  class="dxcc_select1 downloadSelect">
+                                    <option>GB</option>
+                                    <option>TB</option>
+                                </select>
+                                <label class="dxcc_select_unit">/月</label>
+                            </div>
+                            <span class="dxcc_info">（预估月均CDN下载流量）</span>
+                        </li> -->
+                    </ul>
+                    <h4>购买信息</h4>
+                    <ul class="paddinglf30">
+                        <li>
+                            <span class="jiage_mark1 current" data-value="needed">按需付费</span>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <span class="jiage_label1">时间:</span>
+                                    <div id="progressEos"></div>
+                                    <div  class="progressEos"></div>月
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+                         </li>
+                    </ul>
+                </div>
+            </table>
+		</td>
+        <td width="10">&nbsp;</td>
+        <td width="289" valign="top" class="jiage_view">
+        	<div class="jiege_view_top">
+            	<h4>价格预览</h4>
+                <span>￥<span class="total_price">0</span></span>
+            </div>
+        </td>
+    </tr>
+</table>
+<#include "/wwwroot/${sitePath}/template/common/foot_content.html">
+
+<!--js部分-->
+<script type="text/javascript" src="/script/jquery.min.js"></script>
+<script type="text/javascript" src="/script/header.js"></script>
+<script type="text/javascript" src="/script/jquery.cookie.js"></script>
+<script type="text/javascript" src="/script/progress.js"></script>
+<script type="text/javascript" src="/script/priceModul.js"></script>
+<script type="text/javascript" src="/script/price.js"></script>
+
+
+</body>
+</html>

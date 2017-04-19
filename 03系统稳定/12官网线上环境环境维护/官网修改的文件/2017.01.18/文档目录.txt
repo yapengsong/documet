@@ -1,0 +1,2 @@
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/notice/index.html
+apache-tomcat-7.0.67/webapps/leimingtech-admin/wwwroot/yygw/template/notice/notice_detail.html

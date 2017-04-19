@@ -1,0 +1,1 @@
+update ecmc_sys_authority set permission = CONCAT(permission,'\nhttp:/ecmc/physical/datacenter/getsyncprogress.do;') where id = '40288eee545fc01a01545febd38d001f';

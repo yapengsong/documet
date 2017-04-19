@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link href="/style/style.css" rel="stylesheet" type="text/css">
+<title>易云捷讯-企业云上易云</title>
+</head>
+
+<body>
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+<div class="syy_banner syy_banner1"> <#include "/wwwroot/${sitePath}/template/common/header_syy.html">
+    <h3>产品与服务</h3>
+</div>
+<div class="syy_product_nav"> <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158435c86180018'}")>
+    <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}"><span class="syy_os">EayunOS</span></a> </#if>
+    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158435cede2001a'}")>
+    <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}"><span class="syy_stack">EayunStack</span></a> </#if>
+    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158435d5636001c'}")>
+    <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}"><span class="syy_cloud current">EayunCloud</span></a> </#if> </div>
+<table width="1200" border="0" cellspacing="0" cellpadding="0" class="warp1200">
+    <tr>
+        <td width="1200" valign="top"><table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <h5 class="syy_content_list">简介</h5>
+                    <p class="syy_infor">EayunCloud是支持公有云、私有云和混合云场景的云业务管理平台，深度集成大中型政企应用与混合云计算基础架构，帮助用户统一管理部署在多个云平台上的应用服务，提供适用于不同政企应用场景的运营模块以及与多个应用厂商进行深度集成的应用运维系统，以帮助企业运营者完成混合云日常运营工作，对企业各种应用进行集中运维，保证客户业务连续性。 </p>
+                    <p class="syy_infor">EayunCloud的基础框架采用成熟的WebService技术，适合异构体系、分布式Web服务调用。基于此框架，EayunCloud的各个模块可以根据使用场景灵活支持混合/单独部署。</p>
+                </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <h5 class="syy_content_list">优势</h5>
+                </tr>
+            </table>
+            <div>
+                <TABLE style="MARGIN-LEFT: 40px" cellSpacing=0 cellPadding=0 border=0>
+                    <TBODY>
+                        <TR>
+                            <TD class=paddingbt40 vAlign=top width=220><DIV class=pic_h1><IMG src="../../../images/eayuncloud_26.jpg" width=104 height=83></DIV>
+                                <DIV class=pictitle_h1>应用广泛</DIV>
+                                <DIV class=piccon_h1>在大型项目中得到大规模实际应用的企业级混合云管理运营平台。</DIV></TD>
+                            <TD class=paddingbt40 width=260>&nbsp;</TD>
+                            <TD class=paddingbt40 vAlign=top width=220><DIV class=pic_h1><IMG src="../../../images/eayuncloud_23.jpg" width=88 height=89></DIV>
+                                <DIV class=pictitle_h1>成熟稳定</DIV>
+                                <DIV class=piccon_h1>帮助用户管理大中型政企应用，使其与混合云计算基础架构进行深度集成，提高运营效率。</DIV></TD>
+                            <TD class=paddingbt40 width=260>&nbsp;</TD>
+                            <TD class=paddingbt40 vAlign=top width=220><DIV class=pic_h1><IMG src="../../../images/eayuncloud_20.jpg" width=93 height=87></DIV>
+                                <DIV class=pictitle_h1>易于扩展</DIV>
+                                <DIV class=piccon_h1>通过多云模块适配器支持OpenStack、EayunOS、 RHEV、VMware等多个虚拟化平台。</DIV></TD>
+                        </TR>
+                        <TR>
+                            <TD class=paddingbt40 vAlign=top><DIV class=pic_h1><IMG src="../../../images/eayuncloud_36.jpg" width=94 height=89></DIV>
+                                <DIV class=pictitle_h1>灵活部署</DIV>
+                                <DIV class=piccon_h1>底层开发平台采用Spring+Hiber-nate，灵活性高，模块间采用松耦合架构，根据使用场景的不同，支持多样化部署。</DIV></TD>
+                            <TD class=paddingbt40 >&nbsp;</TD>
+                            <TD class=paddingbt40 vAlign=top><DIV class=pic_h1><IMG src="../../../images/eayuncloud_39.jpg" width=86 height=86></DIV>
+                                <DIV class=pictitle_h1>专属定制</DIV>
+                                <DIV class=piccon_h1>支持专属定制服务，满足客户特定需求。</DIV></TD>
+                            <TD class=paddingbt40 >&nbsp;</TD>
+                            <TD class=paddingbt40 >&nbsp;</TD>
+                        </TR>
+                    </TBODY>
+                </TABLE>
+            </div>
+           </td>
+    </tr>
+</table>
+<#include "/wwwroot/${sitePath}/template/common/foot_syy.html"> 
+</body>
+</html>

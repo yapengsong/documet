@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link href="/style/style.css" rel="stylesheet" type="text/css">
+<title>易云捷讯-企业云上易云</title>
+</head>
+
+<body>
+<#assign name ="catalogTag">
+<#assign catalogTag =newTag("${name}")>
+<div class="syy_banner syy_banner1"> <#include "/wwwroot/${sitePath}/template/common/header_syy.html">
+    <h3>产品与服务</h3>
+</div>
+<div class="syy_product_nav"> <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158435c86180018'}")>
+    <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}"><span class="syy_os">EayunOS</span></a> </#if>
+    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158435cede2001a'}")>
+    <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}"><span class="syy_stack current">EayunStack</span></a> </#if>
+    <#assign catalog=catalogTag("{'levels':'self','name':'402890e758434aaa0158435d5636001c'}")>
+    <#if catalog?exists> <a href="${catalog.url!'javascript:void(0);'}"><span class="syy_cloud">EayunCloud</span></a> </#if> </div>
+<table width="1200" border="0" cellspacing="0" cellpadding="0" class="warp1200">
+    <tr>
+        <td width="940" valign="top"><table  border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <h5 class="syy_content_list">简介</h5>
+                    <p class="syy_infor">EayunStack云计算资源调度平台，是易云基于OpenStack开发的基础设施即服务（IaaS）平台。该平台包含弹性计算、软件定义网络(SDN)、分布式存储等核心模块，具备快速部署机制和完善的HA（高可用）架构，能为企业客户提供高性能、可扩展、安全可靠的云计算服务。 </p>
+                    <p class="syy_infor">易云通过EayunStack平台在数据中心快速提供公有云服务，并且能根据业务需求对云平台进行优化和调整，业务最优运行。EayunStack采用OpenStack开源平台和开发标准构建，能100%支持原生OpenStack API，完全支持基于OpenStack的自主二次开发。</p>
+                </tr>
+            </table>
+            <table  border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <h5 class="syy_content_list">优势</h5>
+                </tr>
+            </table>
+            <div>
+                <TABLE style="MARGIN-LEFT: 40px" cellSpacing=0 cellPadding=0 border=0>
+                    <TBODY>
+                        <TR>
+                            <TD class=paddingbt40 vAlign=top width=220><DIV class=pic_h1><IMG src="../../../images/eayunstack_13.jpg" width=73 height=79></DIV>
+                                <DIV class=pictitle_h1>性能优化</DIV>
+                                <DIV class=piccon_h1>国内领先的公有云平台，性能全面优化（计算、存储，网络）。</DIV></TD>
+                            <TD class=paddingbt40 vAlign=top width=260>&nbsp;</TD>
+                            <TD class=paddingbt40 vAlign=top width=220><DIV class=pic_h1><IMG src="../../../images/eayunstack_07.jpg" width=85 height=91></DIV>
+                                <DIV class=pictitle_h1>多云存储</DIV>
+                                <DIV class=piccon_h1>支持多种类型云存储后端，提供差异化磁盘I/O服务。</DIV></TD>
+                            <TD class=paddingbt40 vAlign=top width=260>&nbsp;</TD>
+                            <TD class=paddingbt40 vAlign=top><DIV class=pic_h1><IMG src="../../../images/eayunstack_10.jpg" width=104 height=70></DIV>
+                                <DIV class=pictitle_h1>快速部署</DIV>
+                                <DIV class=piccon_h1>快速动态部署整个云服务平台，部署速度提升3倍。</DIV></TD>
+                        </TR>
+                        <TR>
+                            <TD class=paddingbt40 vAlign=top><DIV class=pic_h1><IMG src="../../../images/eayunstack_19.jpg" width=104 height=95></DIV>
+                                <DIV class=pictitle_h1>高可用</DIV>
+                                <DIV class=piccon_h1>公有云系统各个模块均实现高可用，服务SLA不低于99.95%。</DIV></TD>
+                            <TD class=paddingbt40 vAlign=top>&nbsp;</TD>
+                            <TD class=paddingbt40 vAlign=top><DIV class=pic_h1><IMG src="../../../images/eayunstack_25.jpg" width=104 height=83></DIV>
+                                <DIV class=pictitle_h1>弹性伸缩</DIV>
+                                <DIV class=piccon_h1>资源灵活方便。秒级开通资源, 可动态伸缩资源。</DIV></TD>
+                            <TD class=paddingbt40 vAlign=top>&nbsp;</TD>
+                            <TD vAlign=top><DIV class=pic_h1><IMG src="../../../images/eayunstack_22.jpg" width=80 height=95></DIV>
+                                <DIV class=pictitle_h1>安全隔离</DIV>
+                                <DIV class=piccon_h1>提供专属云服务，在物理层面达到计算，存储，网络的隔离。</DIV></TD>
+                        </TR>
+                    </TBODY>
+                </TABLE>
+            </div>
+            </td>
+    </tr>
+</table>
+<#include "/wwwroot/${sitePath}/template/common/foot_syy.html"> 
+</body>
+</html>
